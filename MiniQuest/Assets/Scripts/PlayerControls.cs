@@ -12,6 +12,8 @@ public class PlayerControls : MonoBehaviour
     private InputAction movement;
 
     [SerializeField]
+    private TransitionManager transitionManager;
+    [SerializeField]
     private Rigidbody2D rb;
     [SerializeField]
     private Animator playerAnimator;
@@ -23,9 +25,9 @@ public class PlayerControls : MonoBehaviour
     private float movementSpeed = 10.0f;// the added speed for the player movement
 
     [SerializeField]
-    private float attackAnimDuration = 0.5f;
+    private float attackAnimDuration = 0.5f;//the animation duration
     private float timer = 0.0f;
-    private bool isAttacking = false; //attack timer and duration
+    private bool isAttacking = false;
 
     private bool releaseProjectile = false; //used to let the attack manager know it can fire the projectile
     private float rotation = 0.0f; //rotation is for the projectile to face the correct way when fired
@@ -49,7 +51,6 @@ public class PlayerControls : MonoBehaviour
         movement.Disable();
         inputManager.PlayerController.Attack.Disable();
     }
-
     private void Attack(InputAction.CallbackContext obj)//the attacking function
     {
         if (!isAttacking)//check to see if the attack is already in progress
@@ -59,7 +60,56 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    private void idleAnim()//basically a switch statement for the idle anims to function properly with the way thep layer was last moving
+    private void Update()
+    {
+        movementVector = movement.ReadValue<Vector2>();//puts the movement vector from the input manager into a vec2
+
+        if (movementVector != Vector2.zero)//gets the last non zero vector from the movement vector for shooting a projectile
+            prevMovementVector = movementVector;
+
+        idleAnim();
+        attackAnimDelay(Time.deltaTime);
+
+        if(transitionManager.getIsTransitioning())//check to see if there is a transistion occurring
+        {
+            movementVector = Vector2.zero;//makes it so the player cannot move while transitioning
+        }
+
+        //sets the parameters for animation based on the movement vector from the input manager
+        playerAnimator.SetFloat("HorizontalMovement", movementVector.x);
+        playerAnimator.SetFloat("VerticalMovement", movementVector.y);
+        playerAnimator.SetFloat("Speed", movementVector.sqrMagnitude);
+    }
+
+    private void FixedUpdate()
+    {
+        //movement equation equivalent to P = p + v*t with added speed
+        rb.MovePosition(rb.position + movementVector * movementSpeed * Time.fixedDeltaTime);
+    }
+
+    private void attackAnimDelay(float dt)//stops the player from moving during the attack animation
+    {
+        if (isAttacking)
+        {
+            timer += dt;//timer for the attack anim to play out
+
+            if (timer >= attackAnimDuration)
+            {
+                timer = 0.0f;//timer reset
+
+                //player is no longer attacking
+                isAttacking = false;
+                playerAnimator.SetBool("Attack", false);//sets the attack param in animations to false so the animation only plays once
+
+                releaseProjectile = true;
+            }
+            else
+            {
+                movementVector = Vector2.zero;//makes it so the player cannot move while attacking
+            }
+        }
+    }
+    private void idleAnim()//basically a switch statement for the idle anims to function properly with the way the player was last moving
     {
         if (movementVector.y == -1)//player facing down
         {
@@ -98,58 +148,14 @@ public class PlayerControls : MonoBehaviour
             rotation = 270;
         }
     }
-
-    private void Update()
-    {
-        movementVector = movement.ReadValue<Vector2>();//puts the movement vector from the input manager into a vec2
-
-        if (movementVector != Vector2.zero)
-            prevMovementVector = movementVector;
-
-        idleAnim();
-
-        if(isAttacking)
-        {
-            timer += Time.deltaTime;//timer for the attack anim to play out
-            
-            if(timer >= attackAnimDuration)
-            {
-                timer = 0.0f;//timer reset
-
-                //player is no longer attacking
-                isAttacking = false;
-                playerAnimator.SetBool("Attack", false);
-
-                releaseProjectile = true;
-            }
-            else
-            {
-                movementVector = Vector2.zero;//makes it so the player cannot move while attacking
-            }
-        }
-
-        //sets the parameters for animation based on the movement vector from the input manager
-        playerAnimator.SetFloat("HorizontalMovement", movementVector.x);
-        playerAnimator.SetFloat("VerticalMovement", movementVector.y);
-        playerAnimator.SetFloat("Speed", movementVector.sqrMagnitude);
-    }
-
-    private void FixedUpdate()
-    {
-        //movement equation equivalent to P = p + v*t with added speed
-        rb.MovePosition(rb.position + movementVector * movementSpeed * Time.fixedDeltaTime);
-    }
-
     public Vector2 GetPrevMovementVector()
     {
         return prevMovementVector;
     }
-
     public float getRotation()
     {
         return rotation;
     }
-
     public bool getReleaseProjectile()
     {
         return releaseProjectile;

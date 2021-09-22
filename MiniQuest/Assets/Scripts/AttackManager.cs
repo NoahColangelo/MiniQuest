@@ -42,16 +42,22 @@ public class AttackManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        setupProjectile();
+        destroyProjectile();
 
-        if(playerControls.getReleaseProjectile())
+    }
+
+    void setupProjectile()//checks if there is a free projectile in the object pool for the player to use
+    {
+        if (playerControls.getReleaseProjectile())
         {
             GameObject temp = checkRotation();//temp gameobject to store which projectile position and rotation the projectile will spawn out of
 
             playerControls.setReleaseProjectile(false);
 
-            for(int i = 0; i < projectileBank.Length; i++)
+            for (int i = 0; i < projectileBank.Length; i++)
             {
-                if(!projectileBank[i].activeInHierarchy)//checks if the projectile is not yet active, meaning available
+                if (!projectileBank[i].activeInHierarchy)//checks if the projectile is not yet active, meaning available
                 {
                     projectileBank[i].SetActive(true);
                     projectileBank[i].GetComponent<Projectile>().setDirectionVector(playerControls.GetPrevMovementVector());//sends playerControls previous non zero movement vector to the projectile
@@ -61,8 +67,10 @@ public class AttackManager : MonoBehaviour
                 }
             }
         }
-
-        //this checks to see if the life span of the projectile has ended and will put it back in the projectile bank
+    }
+    void destroyProjectile()//this checks to see if the life span of the projectile has ended and will put it back in the projectile bank
+    {
+        
         for (int i = 0; i < projectileBank.Length; i++)
         {
             if (projectileBank[i].activeInHierarchy && projectileBank[i].GetComponent<Projectile>().getIsDead())//checks if the projectile is active and is dead
@@ -74,7 +82,6 @@ public class AttackManager : MonoBehaviour
             }
         }
     }
-
     GameObject checkRotation()//checks which projectile position and rotation the projectile will spawn out of
     {
         switch (playerControls.getRotation())
