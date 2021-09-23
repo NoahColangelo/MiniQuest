@@ -64,7 +64,7 @@ public class PlayerControls : MonoBehaviour
     {
         movementVector = movement.ReadValue<Vector2>();//puts the movement vector from the input manager into a vec2
 
-        if (movementVector != Vector2.zero)//gets the last non zero vector from the movement vector for shooting a projectile
+        if (movementVector != Vector2.zero && !isAttacking)//gets the last non zero vector from the movement vector for shooting a projectile
             prevMovementVector = movementVector;
 
         idleAnim();
@@ -118,7 +118,8 @@ public class PlayerControls : MonoBehaviour
             playerAnimator.SetBool("Left_Idle", false);
             playerAnimator.SetBool("Right_Idle", false);
 
-            rotation = 180;
+            if(!isAttacking)
+                rotation = 180;
         }
         else if (movementVector.y == 1)//player faicng up
         {
@@ -127,7 +128,8 @@ public class PlayerControls : MonoBehaviour
             playerAnimator.SetBool("Left_Idle", false);
             playerAnimator.SetBool("Right_Idle", false);
 
-            rotation = 0;
+            if (!isAttacking)
+                rotation = 0;
         }
         else if (movementVector.x == -1)//player facing left
         {
@@ -136,7 +138,8 @@ public class PlayerControls : MonoBehaviour
             playerAnimator.SetBool("Left_Idle", true);//
             playerAnimator.SetBool("Right_Idle", false);
 
-            rotation = 90;
+            if (!isAttacking)
+                rotation = 90;
         }
         else if (movementVector.x == 1)//player facing right
         {
@@ -145,7 +148,8 @@ public class PlayerControls : MonoBehaviour
             playerAnimator.SetBool("Left_Idle", false);
             playerAnimator.SetBool("Right_Idle", true);//
 
-            rotation = 270;
+            if (!isAttacking)
+                rotation = 270;
         }
     }
     public Vector2 GetPrevMovementVector()

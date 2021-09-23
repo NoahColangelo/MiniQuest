@@ -32,12 +32,17 @@ public class Projectile : MonoBehaviour
         rb.MovePosition(rb.position + directionVector * projectileSpeed * Time.fixedDeltaTime);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)//checks to see if the projectile hits an enemy or blocking tile
     {
         if(collision.transform.tag == "Blocking" || collision.transform.tag == "Enemy")
         {
             isDead = true;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)//this destorys the arrow if it crosses a tranistion triggerbox
+    {
+        isDead = true;
     }
     public void setDirectionVector(Vector2 prevMovementVector)//sets the directionVector to the prevMovementVector
     {

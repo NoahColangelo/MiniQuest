@@ -10,11 +10,11 @@ public class AttackManager : MonoBehaviour
     [SerializeField]
     private GameObject shootUp;//0
     [SerializeField]
-    private GameObject shootLeft;//90
+    private GameObject shootRight;//90
     [SerializeField]
     private GameObject shootDown;//180
     [SerializeField]
-    private GameObject shootRight;//270
+    private GameObject shootLeft;//270
 
     [SerializeField]
     private GameObject arrow;
@@ -89,11 +89,11 @@ public class AttackManager : MonoBehaviour
             case 0:
                 return shootUp;
             case 90:
-                return shootLeft;
+                return shootRight;
             case 180:
                 return shootDown;
             case 270:
-                return shootRight;
+                return shootLeft;
         }
         return null;
     }
