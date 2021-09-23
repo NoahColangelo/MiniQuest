@@ -7,7 +7,7 @@ public class Transition : MonoBehaviour
 
     private bool transitionTriggered = false;
 
-    private bool startMidTransition = false;// only used for when the player is going back to the middle area
+    private bool startTransitionDelay = false;// only used for when the player is going back to the middle area
 
     private float waitOnMidTrigger = 0.2f;//slight delay before transition so player is not cut off of screen
     private float timer = 0.0f;
@@ -23,27 +23,32 @@ public class Transition : MonoBehaviour
 
         if (collision.transform.tag == "Player" && !transitionTriggered) 
         {
-            transitionTriggered = true;
+            //transitionTriggered = true;
+
+            startTransitionDelay = true;
         }
         else if (collision.transform.tag == "Player" && transitionTriggered)
         {
-            startMidTransition = true;
+            startTransitionDelay = true;
         }
 
     }
 
     private void delayTransitionToMid(float dt)//the timer that delays the mid transition for the camera
     {
-        if (startMidTransition && timer < waitOnMidTrigger)
+        if (startTransitionDelay && timer < waitOnMidTrigger)
         {
             timer += dt;
         }
-        else if (timer > waitOnMidTrigger)
+        else if (timer > waitOnMidTrigger)//once timer has finished
         {
             timer = 0.0f;
-            startMidTransition = false;
+            startTransitionDelay = false;
 
-            transitionTriggered = false;
+            if (transitionTriggered)//allows for the delay to work going to and from the mid scene to help combat the camera messing up
+                transitionTriggered = false;
+            else
+                transitionTriggered = true;
         }
     }
 

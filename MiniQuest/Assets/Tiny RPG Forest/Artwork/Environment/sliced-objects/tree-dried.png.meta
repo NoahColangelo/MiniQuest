@@ -1,7 +1,358 @@
 fileFormatVersion: 2
 guid: db07cc93e21f1457d9a1364618027fbb
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8274265486856528186
+    second: tree-dried_0
+  - first:
+      213: -1802913119947417162
+    second: tree-dried_1
+  - first:
+      213: 2772944058374814657
+    second: tree-dried_2
+  - first:
+      213: 4842335405124609425
+    second: tree-dried_3
+  - first:
+      213: -6387674237508993281
+    second: tree-dried_4
+  - first:
+      213: 2257100942658878260
+    second: tree-dried_5
+  - first:
+      213: 6321566049857003627
+    second: tree-dried_6
+  - first:
+      213: 3831527469593400126
+    second: tree-dried_7
+  - first:
+      213: -1692358355842988303
+    second: tree-dried_8
+  - first:
+      213: 2720135529567156499
+    second: tree-dried_9
+  - first:
+      213: 8997867491228758666
+    second: tree-dried_10
+  - first:
+      213: -1112060739768192532
+    second: tree-dried_11
+  - first:
+      213: 2443802413643621290
+    second: tree-dried_12
+  - first:
+      213: 2758696154559264454
+    second: tree-dried_13
+  - first:
+      213: -5522910782192830734
+    second: tree-dried_14
+  - first:
+      213: 2954656332955338752
+    second: tree-dried_15
+  - first:
+      213: 2511997103799510364
+    second: tree-dried_16
+  - first:
+      213: 1394981859074951146
+    second: tree-dried_17
+  - first:
+      213: 8854041084347003661
+    second: tree-dried_18
+  - first:
+      213: -7178137685459101174
+    second: tree-dried_19
+  - first:
+      213: -2563782967951301635
+    second: tree-dried_20
+  - first:
+      213: 4520238708392922295
+    second: tree-dried_21
+  - first:
+      213: -9190016748974782931
+    second: tree-dried_22
+  - first:
+      213: -5497727219687462933
+    second: tree-dried_23
+  - first:
+      213: 4619097481930216896
+    second: tree-dried_24
+  - first:
+      213: 7142641821117745970
+    second: tree-dried_25
+  - first:
+      213: 7920591332231766631
+    second: tree-dried_26
+  - first:
+      213: -3802739429055853454
+    second: tree-dried_27
+  - first:
+      213: 2903928694041701368
+    second: tree-dried_28
+  - first:
+      213: -3999872257390264422
+    second: tree-dried_29
+  - first:
+      213: -4927157777077402507
+    second: tree-dried_30
+  - first:
+      213: 937787240668438787
+    second: tree-dried_31
+  - first:
+      213: -3145846995680685607
+    second: tree-dried_32
+  - first:
+      213: 5055510394573283707
+    second: tree-dried_33
+  - first:
+      213: 3181295901246958516
+    second: tree-dried_34
+  - first:
+      213: -7917006456868175657
+    second: tree-dried_35
+  - first:
+      213: 3462620517048044425
+    second: tree-dried_36
+  - first:
+      213: -2307318256367624860
+    second: tree-dried_37
+  - first:
+      213: -5040832266095140462
+    second: tree-dried_38
+  - first:
+      213: -2849773188303475616
+    second: tree-dried_39
+  - first:
+      213: 3643429378585050312
+    second: tree-dried_40
+  - first:
+      213: -1092763989808975383
+    second: tree-dried_41
+  - first:
+      213: 5982233397645511697
+    second: tree-dried_42
+  - first:
+      213: 3354838757148795893
+    second: tree-dried_43
+  - first:
+      213: -4134884712693588743
+    second: tree-dried_44
+  - first:
+      213: 7755153246719947251
+    second: tree-dried_45
+  - first:
+      213: -3545942477125957717
+    second: tree-dried_46
+  - first:
+      213: 4478472352405236225
+    second: tree-dried_47
+  - first:
+      213: -2113523776838758599
+    second: tree-dried_48
+  - first:
+      213: 1608160592656760997
+    second: tree-dried_49
+  - first:
+      213: 2582372998640304285
+    second: tree-dried_50
+  - first:
+      213: -3882758370973802989
+    second: tree-dried_51
+  - first:
+      213: 2029419249380193990
+    second: tree-dried_52
+  - first:
+      213: -2324593977913040906
+    second: tree-dried_53
+  - first:
+      213: 7591419536780702021
+    second: tree-dried_54
+  - first:
+      213: -2933935734754428751
+    second: tree-dried_55
+  - first:
+      213: 268870275044948863
+    second: tree-dried_56
+  - first:
+      213: 6528754923665486122
+    second: tree-dried_57
+  - first:
+      213: -7340739602407748496
+    second: tree-dried_58
+  - first:
+      213: -4118217181017065093
+    second: tree-dried_59
+  - first:
+      213: 6326552920514849769
+    second: tree-dried_60
+  - first:
+      213: 6940689702032389438
+    second: tree-dried_61
+  - first:
+      213: -8239178359672187618
+    second: tree-dried_62
+  - first:
+      213: 5669340410808491338
+    second: tree-dried_63
+  - first:
+      213: -5897952745978682507
+    second: tree-dried_64
+  - first:
+      213: 5157401697836172632
+    second: tree-dried_65
+  - first:
+      213: -8429501110539969038
+    second: tree-dried_66
+  - first:
+      213: -7964289966132117342
+    second: tree-dried_67
+  - first:
+      213: 3895759969253531561
+    second: tree-dried_68
+  - first:
+      213: 3373152204965473499
+    second: tree-dried_69
+  - first:
+      213: 8307122654442838396
+    second: tree-dried_70
+  - first:
+      213: 4542114570981416841
+    second: tree-dried_71
+  - first:
+      213: 3958961201992537983
+    second: tree-dried_72
+  - first:
+      213: 4357438680440280759
+    second: tree-dried_73
+  - first:
+      213: 726890220512842930
+    second: tree-dried_74
+  - first:
+      213: 1126178011350222317
+    second: tree-dried_75
+  - first:
+      213: 1877989979272001508
+    second: tree-dried_76
+  - first:
+      213: -6473898198567600094
+    second: tree-dried_77
+  - first:
+      213: 440702429647470036
+    second: tree-dried_78
+  - first:
+      213: 1830551143674027942
+    second: tree-dried_79
+  - first:
+      213: -6057962033276743835
+    second: tree-dried_80
+  - first:
+      213: -8454487903072713910
+    second: tree-dried_81
+  - first:
+      213: -5526443203926954546
+    second: tree-dried_82
+  - first:
+      213: 6605185807941691246
+    second: tree-dried_83
+  - first:
+      213: 5051640724938273579
+    second: tree-dried_84
+  - first:
+      213: 4743460530310778323
+    second: tree-dried_85
+  - first:
+      213: -5447424955527588913
+    second: tree-dried_86
+  - first:
+      213: 5913546182114498882
+    second: tree-dried_87
+  - first:
+      213: -9161405166587915694
+    second: tree-dried_88
+  - first:
+      213: 1228339059112766873
+    second: tree-dried_89
+  - first:
+      213: 1918567754433028245
+    second: tree-dried_90
+  - first:
+      213: -1032322008820019630
+    second: tree-dried_91
+  - first:
+      213: 5481423467018531515
+    second: tree-dried_92
+  - first:
+      213: -7759911248103833180
+    second: tree-dried_93
+  - first:
+      213: 1183311615218002651
+    second: tree-dried_94
+  - first:
+      213: -7850911038691878859
+    second: tree-dried_95
+  - first:
+      213: -4381868717658148424
+    second: tree-dried_96
+  - first:
+      213: -9053593597847034930
+    second: tree-dried_97
+  - first:
+      213: 5557070476388511051
+    second: tree-dried_98
+  - first:
+      213: -8883247151376959188
+    second: tree-dried_99
+  - first:
+      213: -2884002723462152965
+    second: tree-dried_100
+  - first:
+      213: 3642658199695541601
+    second: tree-dried_101
+  - first:
+      213: -8400073759093629415
+    second: tree-dried_102
+  - first:
+      213: 8300192430936799820
+    second: tree-dried_103
+  - first:
+      213: 8051312270768198698
+    second: tree-dried_104
+  - first:
+      213: 2993241181068079719
+    second: tree-dried_105
+  - first:
+      213: 2913434993236473421
+    second: tree-dried_106
+  - first:
+      213: -990078750441597174
+    second: tree-dried_107
+  - first:
+      213: 5758949515713383836
+    second: tree-dried_108
+  - first:
+      213: 648675587454900740
+    second: tree-dried_109
+  - first:
+      213: -5088781903817593057
+    second: tree-dried_110
+  - first:
+      213: -1177350002759638723
+    second: tree-dried_111
+  - first:
+      213: 3038187682278560330
+    second: tree-dried_112
+  - first:
+      213: -5983501035678841457
+    second: tree-dried_113
+  - first:
+      213: 1948069394269742221
+    second: tree-dried_114
+  - first:
+      213: -2661184425948901806
+    second: tree-dried_115
+  - first:
+      213: 3284536530246887133
+    second: tree-dried_116
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,13 +452,2474 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: tree-dried_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 97.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce54aee067eb2d80800000000000000
+      internalID: -8274265486856528186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 97.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b994a4d114caf6e0800000000000000
+      internalID: -1802913119947417162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 97.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbf57dede97b7620800000000000000
+      internalID: 2772944058374814657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 91.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195efb9256e633340800000000000000
+      internalID: 4842335405124609425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 91.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffebc54df1c6a57a0800000000000000
+      internalID: -6387674237508993281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 91.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bb1654955d25f10800000000000000
+      internalID: 2257100942658878260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_6
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 91.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6065e944d6bab750800000000000000
+      internalID: 6321566049857003627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 91.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33144ceee15c2530800000000000000
+      internalID: 3831527469593400126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_8
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 91.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f68057ba098388e0800000000000000
+      internalID: -1692358355842988303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 85.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319f4cc2adcdfb520800000000000000
+      internalID: 2720135529567156499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 85.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82b9be7fc8dedc70800000000000000
+      internalID: 8997867491228758666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_11
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 85.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1757d26aa2190f0800000000000000
+      internalID: -1112060739768192532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 85.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3687ee8512ae120800000000000000
+      internalID: 2443802413643621290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_13
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 85.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6bdbf498bd84620800000000000000
+      internalID: 2758696154559264454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 79.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6b83db7edaa53b0800000000000000
+      internalID: -5522910782192830734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 79.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0084927c74c010920800000000000000
+      internalID: 2954656332955338752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 79.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55a7c88e086cd220800000000000000
+      internalID: 2511997103799510364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_17
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 79.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7c6422c98fb5310800000000000000
+      internalID: 1394981859074951146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_18
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 79.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03b73b947fdfda70800000000000000
+      internalID: 8854041084347003661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_19
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 79.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a9d557ec1226c90800000000000000
+      internalID: -7178137685459101174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_20
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 79.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3e01269fc9b6cd0800000000000000
+      internalID: -2563782967951301635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_21
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 79.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc0bb1f72d1bbe30800000000000000
+      internalID: 4520238708392922295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_22
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 73.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26c7752570867080800000000000000
+      internalID: -9190016748974782931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_23
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 73.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7688ec83624b3b0800000000000000
+      internalID: -5497727219687462933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_24
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 73.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c51a51dfa45a1040800000000000000
+      internalID: 4619097481930216896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_25
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 73.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b829994e2cf1360800000000000000
+      internalID: 7142641821117745970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_26
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 73.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76266b00ad79bed60800000000000000
+      internalID: 7920591332231766631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 73.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c01c513a4f93bc0800000000000000
+      internalID: -3802739429055853454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_28
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 73.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb6b65f2c3dc4820800000000000000
+      internalID: 2903928694041701368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_29
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 73.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f3057cf599d78c0800000000000000
+      internalID: -3999872257390264422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_30
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5748ff06b183f9bb0800000000000000
+      internalID: -4927157777077402507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_31
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301afead680b30d00800000000000000
+      internalID: 937787240668438787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_32
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d119b823d4b754d0800000000000000
+      internalID: -3145846995680685607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_33
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71e5da2be7c82640800000000000000
+      internalID: 5055510394573283707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_34
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb2b3754cb362c20800000000000000
+      internalID: 3181295901246958516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_35
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d006e5d294212290800000000000000
+      internalID: -7917006456868175657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_36
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bc0a6b303bd0030800000000000000
+      internalID: 3462620517048044425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_37
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d1f614542caffd0800000000000000
+      internalID: -2307318256367624860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_38
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291621fe2cd5b0ab0800000000000000
+      internalID: -5040832266095140462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_39
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c2dbc42629378d0800000000000000
+      internalID: -2849773188303475616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_40
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccb8c257bf009230800000000000000
+      internalID: 3643429378585050312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_41
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 67.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1f814e0f8b5d0f0800000000000000
+      internalID: -1092763989808975383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_42
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c83267499250350800000000000000
+      internalID: 5982233397645511697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_43
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3219e2318ce8e20800000000000000
+      internalID: 3354838757148795893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_44
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc94b8e240fd96c0800000000000000
+      internalID: -4134884712693588743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_45
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1b5711ac6df9b60800000000000000
+      internalID: 7755153246719947251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_46
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba740f0ba184acec0800000000000000
+      internalID: -3545942477125957717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_47
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10aa58560eab62e30800000000000000
+      internalID: 4478472352405236225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_48
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f0f29a2514ba2e0800000000000000
+      internalID: -2113523776838758599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_49
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a08613e985515610800000000000000
+      internalID: 1608160592656760997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_50
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90048d6f8e66d320800000000000000
+      internalID: 2582372998640304285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_51
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e9e6555dbad1ac0800000000000000
+      internalID: -3882758370973802989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_52
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c675a31e02f92c10800000000000000
+      internalID: 2029419249380193990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_53
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 61.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff1b73e7126dbfd0800000000000000
+      internalID: -2324593977913040906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_54
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 55.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54136cef8d32a5960800000000000000
+      internalID: 7591419536780702021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_55
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 55.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b833207ef09847d0800000000000000
+      internalID: -2933935734754428751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_56
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 55.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b37b237183bb300800000000000000
+      internalID: 268870275044948863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_57
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 55.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21f9a2230cca9a50800000000000000
+      internalID: 6528754923665486122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_58
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 55.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c08d97934702a90800000000000000
+      internalID: -7340739602407748496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_59
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 55.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7931990b4729d6c0800000000000000
+      internalID: -4118217181017065093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_60
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 55.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb6ff79c5e6cc750800000000000000
+      internalID: 6326552920514849769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_61
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 55.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e353ad9b288425060800000000000000
+      internalID: 6940689702032389438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_62
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 55.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1557a65fee88ad80800000000000000
+      internalID: -8239178359672187618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_63
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 55.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4dd101f01b8dae40800000000000000
+      internalID: 5669340410808491338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_64
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 49.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573a6e9e933462ea0800000000000000
+      internalID: -5897952745978682507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_65
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 49.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8558583e485c29740800000000000000
+      internalID: 5157401697836172632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_66
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 49.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd1180c665640b80800000000000000
+      internalID: -8429501110539969038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_67
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 49.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0cc70f878297190800000000000000
+      internalID: -7964289966132117342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_68
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 49.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af1b892d05801630800000000000000
+      internalID: 3895759969253531561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_69
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 49.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcea460f08dfce20800000000000000
+      internalID: 3373152204965473499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_70
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 49.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c795aab8a04d84370800000000000000
+      internalID: 8307122654442838396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_71
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 49.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f197c1325d80f30800000000000000
+      internalID: 4542114570981416841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_72
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 49.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77915cdc3e01f630800000000000000
+      internalID: 3958961201992537983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_73
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 43.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b69036a46bb87c30800000000000000
+      internalID: 4357438680440280759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_74
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 43.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b49f58edce661a00800000000000000
+      internalID: 726890220512842930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_75
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 43.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5c2604fecf0af00800000000000000
+      internalID: 1126178011350222317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_76
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 43.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e73046afe5ff0a10800000000000000
+      internalID: 1877989979272001508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_77
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 43.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220465a73e71826a0800000000000000
+      internalID: -6473898198567600094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_78
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 43.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddf9ca5680bd1600800000000000000
+      internalID: 440702429647470036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_79
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 43.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af10e5019c676910800000000000000
+      internalID: 1830551143674027942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_80
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 37.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f8cbf80abcdeba0800000000000000
+      internalID: -6057962033276743835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_81
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 37.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a438383cb00abaa80800000000000000
+      internalID: -8454487903072713910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_82
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 37.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdef86bf212e43b0800000000000000
+      internalID: -5526443203926954546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_83
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 31.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67e0dd1f755aab50800000000000000
+      internalID: 6605185807941691246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_84
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 31.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23b7de79780b1640800000000000000
+      internalID: 5051640724938273579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_85
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 31.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd824b683824d140800000000000000
+      internalID: 4743460530310778323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_86
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 31.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc31e295ddbd664b0800000000000000
+      internalID: -5447424955527588913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_87
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 25.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2495dcbdbe2211250800000000000000
+      internalID: 5913546182114498882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_88
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 25.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252591a4a862cd080800000000000000
+      internalID: -9161405166587915694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_89
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 25.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d6722cddfeb0110800000000000000
+      internalID: 1228339059112766873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_90
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 25.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590ef78253f10aa10800000000000000
+      internalID: 1918567754433028245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_91
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 19.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e077a3a947ca1f0800000000000000
+      internalID: -1032322008820019630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_92
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 19.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb23127f99de11c40800000000000000
+      internalID: 5481423467018531515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_93
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 19.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1863865d14f4490800000000000000
+      internalID: -7759911248103833180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_94
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 19.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdaa9a305a7fb6010800000000000000
+      internalID: 1183311615218002651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_95
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 19.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538d3979106fb0390800000000000000
+      internalID: -7850911038691878859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_96
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 13.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1f69f0e997033c0800000000000000
+      internalID: -4381868717658148424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_97
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 13.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3a39b379c2b5280800000000000000
+      internalID: -9053593597847034930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_98
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 13.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4da2f8d72eae1d40800000000000000
+      internalID: 5557070476388511051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_99
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 13.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29fc2208cd58b480800000000000000
+      internalID: -8883247151376959188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_100
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 13.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc77c89dc6f9f7d0800000000000000
+      internalID: -2884002723462152965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_101
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 13.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165440f35525d8230800000000000000
+      internalID: 3642658199695541601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_102
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 13.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ed42eeb61fc6b80800000000000000
+      internalID: -8400073759093629415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_103
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 7.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4abf552a05303370800000000000000
+      internalID: 8300192430936799820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_104
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 7.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24d1e24ad10cbf60800000000000000
+      internalID: 8051312270768198698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_105
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 7.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76232accef02a8920800000000000000
+      internalID: 2993241181068079719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_106
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 7.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d467d08b0b99e6820800000000000000
+      internalID: 2913434993236473421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_107
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 7.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0714444f988242f0800000000000000
+      internalID: -990078750441597174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_108
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 7.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d01838216ebef40800000000000000
+      internalID: 5758949515713383836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_109
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 7.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a97bc820f800900800000000000000
+      internalID: 648675587454900740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_110
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f248be1d30169b0800000000000000
+      internalID: -5088781903817593057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_111
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31e43d096639afe0800000000000000
+      internalID: -1177350002759638723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_112
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a425e2b999fc92a20800000000000000
+      internalID: 3038187682278560330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_113
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f854e2f828556fca0800000000000000
+      internalID: -5983501035678841457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_114
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d842243facee80b10800000000000000
+      internalID: 1948069394269742221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_115
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e83893dd2911bd0800000000000000
+      internalID: -2661184425948901806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree-dried_116
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1.5
+        width: 6.25
+        height: 6.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6e8217294059d20800000000000000
+      internalID: 3284536530246887133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape:
-    - - {x: -11.5, y: -49}
-      - {x: -11.5, y: -11}
-      - {x: 12.5, y: -11}
-      - {x: 12.5, y: -49}
+    - - {x: -16.5, y: -53}
+      - {x: -17.5, y: -36}
+      - {x: -10.5, y: -32}
+      - {x: -6.5, y: -13}
+      - {x: 7.5, y: -13}
+      - {x: 8.5, y: -30}
+      - {x: 18.5, y: -36}
+      - {x: 17.5, y: -53}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0

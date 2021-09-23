@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour
     private Vector2 directionVector;//this vector takes the movement vector from playerControls to use for directing the projectile
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //timer for the projectiles lifespan
         timer += Time.deltaTime;
@@ -32,6 +32,13 @@ public class Projectile : MonoBehaviour
         rb.MovePosition(rb.position + directionVector * projectileSpeed * Time.fixedDeltaTime);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.tag == "Blocking" || collision.transform.tag == "Enemy")
+        {
+            isDead = true;
+        }
+    }
     public void setDirectionVector(Vector2 prevMovementVector)//sets the directionVector to the prevMovementVector
     {
         directionVector = prevMovementVector;
