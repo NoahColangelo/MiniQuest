@@ -8,15 +8,6 @@ public class AttackManager : MonoBehaviour
     private PlayerControls playerControls;
 
     [SerializeField]
-    private GameObject shootUp;//0
-    [SerializeField]
-    private GameObject shootRight;//90
-    [SerializeField]
-    private GameObject shootDown;//180
-    [SerializeField]
-    private GameObject shootLeft;//270
-
-    [SerializeField]
     private GameObject arrow;
 
     private GameObject[] projectileBank = new GameObject[10];
@@ -51,7 +42,7 @@ public class AttackManager : MonoBehaviour
     {
         if (playerControls.getReleaseProjectile())
         {
-            GameObject temp = checkRotation();//temp gameobject to store which projectile position and rotation the projectile will spawn out of
+            GameObject temp = playerControls.checkRotation();//temp gameobject to store which projectile position and rotation the projectile will spawn out of
 
             playerControls.setReleaseProjectile(false);
 
@@ -82,20 +73,4 @@ public class AttackManager : MonoBehaviour
             }
         }
     }
-    GameObject checkRotation()//checks which projectile position and rotation the projectile will spawn out of
-    {
-        switch (playerControls.getRotation())
-        {
-            case 0:
-                return shootUp;
-            case 90:
-                return shootRight;
-            case 180:
-                return shootDown;
-            case 270:
-                return shootLeft;
-        }
-        return null;
-    }
-
 }

@@ -42,7 +42,8 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)//this destorys the arrow if it crosses a tranistion triggerbox
     {
-        isDead = true;
+        if(collision.tag == "Transition")
+            isDead = true;
     }
     public void setDirectionVector(Vector2 prevMovementVector)//sets the directionVector to the prevMovementVector
     {
