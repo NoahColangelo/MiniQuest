@@ -14,11 +14,10 @@ public class PlayerControls : MonoBehaviour
     [SerializeField]
     private TransitionManager transitionManager;
     [SerializeField]
-    private Rigidbody2D rb;
-    [SerializeField]
-    private Animator playerAnimator;
-    [SerializeField]
     private PauseMenu pauseMenu;
+
+    private Rigidbody2D rb;
+    private Animator playerAnimator;
 
     private Vector2 movementVector;//vector that stores the vec2 from the input action movement
     private Vector2 prevMovementVector;//vector that stores the above vectors last value that was a non zero value
@@ -53,6 +52,9 @@ public class PlayerControls : MonoBehaviour
     private void Awake()
     {
         inputManager = new InputManager();
+
+        rb = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
     }//awake Function
     private void OnEnable()//function calls when object it is attatched to is enabled
     {
@@ -65,15 +67,27 @@ public class PlayerControls : MonoBehaviour
         inputManager.PlayerController.Interact.performed += Interact;//subscribes the Interact binding to an event
         inputManager.PlayerController.Interact.Enable();
 
-        inputManager.PlayerController.Menu.performed += Menu;//subscribes the Interact binding to an event
-        inputManager.PlayerController.Menu.Enable();
+        inputManager.PlayerController.OpenMenu.performed += OpenMenu;//subscribes the Interact binding to an event
+        inputManager.PlayerController.OpenMenu.Enable();
+
+        inputManager.UI.LeaveMenu.performed += LeaveMenu;
+        inputManager.UI.LeaveMenu.Enable();
     }
     private void OnDisable()//function calls when object it is attatched to is disabled
     {
         movement.Disable();
+
+        inputManager.PlayerController.Attack.performed -= Attack;//unsubscribes the attack action
         inputManager.PlayerController.Attack.Disable();
+
+        inputManager.PlayerController.Interact.performed -= Interact;//unsubscribes the Interact action
         inputManager.PlayerController.Interact.Disable();
-        inputManager.PlayerController.Menu.Disable();
+
+        inputManager.PlayerController.OpenMenu.performed -= OpenMenu;//unsubscribes the OpenMenu action
+        inputManager.PlayerController.OpenMenu.Disable();
+
+        inputManager.UI.LeaveMenu.performed -= LeaveMenu;//unsubscribes the CloseMenu action
+        inputManager.UI.LeaveMenu.Disable();
     }
 
     private void Attack(InputAction.CallbackContext obj)//the attacking function
@@ -96,9 +110,14 @@ public class PlayerControls : MonoBehaviour
             interactingObject = null;
         }
     }
-    private void Menu(InputAction.CallbackContext obj)//the menu function to open the pause menu in game
+    private void OpenMenu(InputAction.CallbackContext obj)//the menu function to open the pause menu in game
     {
         pauseMenu.pauseGame();
+    }
+
+    private void LeaveMenu(InputAction.CallbackContext obj)//the menu function to open the pause menu in game
+    {
+        pauseMenu.pauseGame();        
     }
 
     private void Update()
@@ -214,6 +233,10 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
+    public InputManager getInputManager()
+    {
+        return inputManager;
+    }
     public GameObject checkRotation()//checks which marker will be used for other objects based off the different idle anims of the character
     {
         switch (rotation)
