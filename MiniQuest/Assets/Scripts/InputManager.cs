@@ -20,9 +20,9 @@ public class @InputManager : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Movement"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""5ae75d32-335a-4931-a0b1-93fbee58c511"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -38,6 +38,14 @@ public class @InputManager : IInputActionCollection, IDisposable
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""282ee303-ee94-4448-8280-ebe91d487b14"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""0084fd85-d1dc-4ac7-bf71-138f3f242c23"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press""
@@ -208,6 +216,28 @@ public class @InputManager : IInputActionCollection, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d93c8467-8fbc-4d9c-ba81-99c89abaabf5"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""MouseAndKeyboard;Keyboard"",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6904363e-452b-4b78-b319-fca90ddd112c"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -258,6 +288,7 @@ public class @InputManager : IInputActionCollection, IDisposable
         m_PlayerController_Movement = m_PlayerController.FindAction("Movement", throwIfNotFound: true);
         m_PlayerController_Attack = m_PlayerController.FindAction("Attack", throwIfNotFound: true);
         m_PlayerController_Interact = m_PlayerController.FindAction("Interact", throwIfNotFound: true);
+        m_PlayerController_Menu = m_PlayerController.FindAction("Menu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -310,6 +341,7 @@ public class @InputManager : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerController_Movement;
     private readonly InputAction m_PlayerController_Attack;
     private readonly InputAction m_PlayerController_Interact;
+    private readonly InputAction m_PlayerController_Menu;
     public struct PlayerControllerActions
     {
         private @InputManager m_Wrapper;
@@ -317,6 +349,7 @@ public class @InputManager : IInputActionCollection, IDisposable
         public InputAction @Movement => m_Wrapper.m_PlayerController_Movement;
         public InputAction @Attack => m_Wrapper.m_PlayerController_Attack;
         public InputAction @Interact => m_Wrapper.m_PlayerController_Interact;
+        public InputAction @Menu => m_Wrapper.m_PlayerController_Menu;
         public InputActionMap Get() { return m_Wrapper.m_PlayerController; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -335,6 +368,9 @@ public class @InputManager : IInputActionCollection, IDisposable
                 @Interact.started -= m_Wrapper.m_PlayerControllerActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerControllerActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerControllerActionsCallbackInterface.OnInteract;
+                @Menu.started -= m_Wrapper.m_PlayerControllerActionsCallbackInterface.OnMenu;
+                @Menu.performed -= m_Wrapper.m_PlayerControllerActionsCallbackInterface.OnMenu;
+                @Menu.canceled -= m_Wrapper.m_PlayerControllerActionsCallbackInterface.OnMenu;
             }
             m_Wrapper.m_PlayerControllerActionsCallbackInterface = instance;
             if (instance != null)
@@ -348,6 +384,9 @@ public class @InputManager : IInputActionCollection, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Menu.started += instance.OnMenu;
+                @Menu.performed += instance.OnMenu;
+                @Menu.canceled += instance.OnMenu;
             }
         }
     }
@@ -384,5 +423,6 @@ public class @InputManager : IInputActionCollection, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnMenu(InputAction.CallbackContext context);
     }
 }

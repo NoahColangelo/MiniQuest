@@ -17,6 +17,8 @@ public class PlayerControls : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField]
     private Animator playerAnimator;
+    [SerializeField]
+    private PauseMenu pauseMenu;
 
     private Vector2 movementVector;//vector that stores the vec2 from the input action movement
     private Vector2 prevMovementVector;//vector that stores the above vectors last value that was a non zero value
@@ -24,6 +26,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField]
     private float movementSpeed = 10.0f;// the added speed for the player movement
 
+    //rotations for animations, projectile placements, and interactable object movement
     [SerializeField]
     private GameObject shootUp;//0
     [SerializeField]
@@ -41,9 +44,9 @@ public class PlayerControls : MonoBehaviour
     private bool releaseProjectile = false; //used to let the attack manager know it can fire the projectile
     private float rotation = 0.0f; //rotation is for the projectile to face the correct way when fired
 
-    private bool nearInteractableObject = false;
-    private bool isInteracting = false;
-    private GameObject interactingObject = null;
+    private bool nearInteractableObject = false;//bool that triggers when player is near interactable object
+    private bool isInteracting = false;//triggers when player presses the interact button with all conditions met
+    private GameObject interactingObject = null;//object to hold the interacting objects info while the player has it
 
 
     //FUNCTIONS START HERE//
@@ -61,12 +64,16 @@ public class PlayerControls : MonoBehaviour
 
         inputManager.PlayerController.Interact.performed += Interact;//subscribes the Interact binding to an event
         inputManager.PlayerController.Interact.Enable();
+
+        inputManager.PlayerController.Menu.performed += Menu;//subscribes the Interact binding to an event
+        inputManager.PlayerController.Menu.Enable();
     }
     private void OnDisable()//function calls when object it is attatched to is disabled
     {
         movement.Disable();
         inputManager.PlayerController.Attack.Disable();
         inputManager.PlayerController.Interact.Disable();
+        inputManager.PlayerController.Menu.Disable();
     }
 
     private void Attack(InputAction.CallbackContext obj)//the attacking function
@@ -84,9 +91,14 @@ public class PlayerControls : MonoBehaviour
         else if (isInteracting)//checks if player is already interacting to drop the object
         {
             isInteracting = false;
+            interactingObject.transform.position = this.transform.position;//places object at players position so it doesnt get placed on an inaccessible place
             interactingObject.transform.SetParent(null);//sets the objects parent to null(no longer the player)
             interactingObject = null;
         }
+    }
+    private void Menu(InputAction.CallbackContext obj)//the menu function to open the pause menu in game
+    {
+        pauseMenu.pauseGame();
     }
 
     private void Update()

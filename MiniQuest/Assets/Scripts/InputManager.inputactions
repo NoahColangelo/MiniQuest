@@ -7,9 +7,9 @@
             "actions": [
                 {
                     "name": "Movement",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "5ae75d32-335a-4931-a0b1-93fbee58c511",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 },
@@ -25,6 +25,14 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "282ee303-ee94-4448-8280-ebe91d487b14",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "0084fd85-d1dc-4ac7-bf71-138f3f242c23",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press"
@@ -193,6 +201,28 @@
                     "processors": "",
                     "groups": "Xbox One Controller",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d93c8467-8fbc-4d9c-ba81-99c89abaabf5",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MouseAndKeyboard;Keyboard",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6904363e-452b-4b78-b319-fca90ddd112c",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

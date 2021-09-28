@@ -9,6 +9,8 @@ TagManager:
   - Projectile
   - Gem
   - Transition
+  - Water
+  - Heart
   layers:
   - Default
   - TransparentFX
