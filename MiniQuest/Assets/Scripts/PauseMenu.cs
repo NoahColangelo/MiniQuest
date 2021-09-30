@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
-        if(gamePaused)
+        if(gamePaused)//starts delay when player brings up the pause menu
             actionMapDelay(Time.unscaledDeltaTime);
     }
 
@@ -55,10 +56,13 @@ public class PauseMenu : MonoBehaviour
             UnityEditor.EditorApplication.isPlaying = false;
         #endif
 
-        Application.Quit();//closes the game if it were in an appilcation form
+        //Application.Quit();//closes the game if it were in an appilcation form
+
+        playerControls.getInputManager().UI.Disable();
+        SceneManager.LoadScene(sceneName: "OpeningScene");//send the player back to the OpeningScene
     }
 
-    private void actionMapDelay(float udt)
+    private void actionMapDelay(float udt)//a delay to stop the actionmap from switching back to the one it is currently on within the same frame press
     {
         if(timer > delayDuration)
         {

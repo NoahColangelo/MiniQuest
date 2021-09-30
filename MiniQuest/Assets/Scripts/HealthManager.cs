@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -12,15 +13,19 @@ public class HealthManager : MonoBehaviour
 
     private int hearts = 3;
 
+    private bool dead = false;
+
     [SerializeField]
     private GameObject[] health = new GameObject[3];//holds the hearts that are in the UI
 
     void Update()
     {
-        if(hearts == 0)//checks if the player is dead
+        if(hearts == 0 && !dead)//checks if the player is dead
         {
+            dead = true;
             //player is dead, game over
             Debug.Log("you are dead");
+            SceneManager.LoadScene(sceneName: "GameOverScene");
         }
     }
 
