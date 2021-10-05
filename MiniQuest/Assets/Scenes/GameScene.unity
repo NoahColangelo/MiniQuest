@@ -93396,6 +93396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1204559634}
   - component: {fileID: 1204559635}
+  - component: {fileID: 1204559636}
   m_Layer: 0
   m_Name: shoot up
   m_TagString: Untagged
@@ -93469,6 +93470,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1204559636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204559633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e509601d9dccea44a53a760ab8f7aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 1}
 --- !u!1 &1258496781
 GameObject:
   m_ObjectHideFlags: 0
@@ -104302,6 +104316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1463833441}
   - component: {fileID: 1463833442}
+  - component: {fileID: 1463833443}
   m_Layer: 0
   m_Name: shoot left
   m_TagString: Untagged
@@ -104375,6 +104390,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1463833443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463833440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e509601d9dccea44a53a760ab8f7aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: -1, y: 0}
 --- !u!1 &1570410337
 GameObject:
   m_ObjectHideFlags: 0
@@ -106674,6 +106702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1943218334}
   - component: {fileID: 1943218335}
+  - component: {fileID: 1943218336}
   m_Layer: 0
   m_Name: shoot right
   m_TagString: Untagged
@@ -106747,6 +106776,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1943218336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943218333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e509601d9dccea44a53a760ab8f7aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 1, y: 0}
 --- !u!1 &1945894540
 GameObject:
   m_ObjectHideFlags: 0
@@ -106871,6 +106913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2043828002}
   - component: {fileID: 2043828003}
+  - component: {fileID: 2043828004}
   m_Layer: 0
   m_Name: shoot down
   m_TagString: Untagged
@@ -106944,3 +106987,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2043828004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043828001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e509601d9dccea44a53a760ab8f7aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: -1}

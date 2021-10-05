@@ -51,7 +51,7 @@ public class AttackManager : MonoBehaviour
                 if (!projectileBank[i].activeInHierarchy)//checks if the projectile is not yet active, meaning available
                 {
                     projectileBank[i].SetActive(true);
-                    projectileBank[i].GetComponent<Projectile>().setDirectionVector(playerControls.GetPrevMovementVector());//sends playerControls previous non zero movement vector to the projectile
+                    projectileBank[i].GetComponent<Projectile>().setDirectionVector(temp.GetComponent<ProjectileTragection>().getDirection());//gets the direction vector from the gameobject it is shooting from
                     projectileBank[i].transform.position = temp.transform.position;//sets position of the projectile
                     projectileBank[i].transform.rotation = temp.transform.rotation;//sets rotation of the projectile
                     break;

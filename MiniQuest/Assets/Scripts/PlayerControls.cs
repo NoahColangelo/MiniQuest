@@ -20,7 +20,7 @@ public class PlayerControls : MonoBehaviour
     private Animator playerAnimator;
 
     private Vector2 movementVector;//vector that stores the vec2 from the input action movement
-    private Vector2 prevMovementVector;//vector that stores the above vectors last value that was a non zero value
+    private Vector2 prevMovementVector = new Vector2(0.0f,-1.0f);//vector that stores the above vectors last value that was a non zero value
 
     [SerializeField]
     private float movementSpeed = 10.0f;// the added speed for the player movement
@@ -41,7 +41,7 @@ public class PlayerControls : MonoBehaviour
     private bool isAttacking = false;
 
     private bool releaseProjectile = false; //used to let the attack manager know it can fire the projectile
-    private float rotation = 0.0f; //rotation is for the projectile to face the correct way when fired
+    private float rotation = 180.0f; //rotation is for the projectile to face the correct way when fired
 
     private bool nearInteractableObject = false;//bool that triggers when player is near interactable object
     private bool isInteracting = false;//triggers when player presses the interact button with all conditions met
@@ -179,7 +179,7 @@ public class PlayerControls : MonoBehaviour
             if(!isAttacking)
                 rotation = 180;
         }
-        else if (movementVector.y == 1)//player faicng up
+        else if (movementVector.y == 1)//player facing up
         {
             playerAnimator.SetBool("Down_Idle", false);
             playerAnimator.SetBool("Up_Idle", true);//
