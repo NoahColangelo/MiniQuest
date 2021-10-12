@@ -105,7 +105,6 @@ public class PlayerControls : MonoBehaviour
         else if (isInteracting)//checks if player is already interacting to drop the object
         {
             isInteracting = false;
-            interactingObject.transform.position = this.transform.position;//places object at players position so it doesnt get placed on an inaccessible place
             interactingObject.transform.SetParent(null);//sets the objects parent to null(no longer the player)
             interactingObject = null;
         }
