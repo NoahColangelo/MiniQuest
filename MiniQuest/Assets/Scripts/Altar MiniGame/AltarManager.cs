@@ -8,6 +8,8 @@ public class AltarManager : MonoBehaviour
     private GemPlacement[] gemPlacements = new GemPlacement[3];//holds the gemPlacements
     [SerializeField]
     private string colour;//holds the colour of the gem the altar manager is managing
+    [SerializeField]
+    private Sprite altarCompleteSprite;
 
     private bool altarComplete = false;
 
@@ -27,6 +29,7 @@ public class AltarManager : MonoBehaviour
             if (gemPlacedCount == 3)//once all gemPlacements are complete the altar will be complete
             {
                 altarComplete = true;
+                GetComponent<SpriteRenderer>().sprite = altarCompleteSprite;//changes the sprite on the altar to show completion
             }
             else//else resets gemPlacedCount
                 gemPlacedCount = 0;
@@ -36,5 +39,10 @@ public class AltarManager : MonoBehaviour
     public string getColour()
     {
         return colour;
+    }
+
+    public bool getAltarComplete()
+    {
+        return altarComplete;
     }
 }
