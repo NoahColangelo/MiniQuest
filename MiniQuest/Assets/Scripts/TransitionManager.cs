@@ -6,11 +6,11 @@ public class TransitionManager : MonoBehaviour
 {
     //the transition gameobjects at each transition point
     [SerializeField]
-    private Transition upTransition;
+    private Transition topTransition;
     [SerializeField]
     private Transition leftTransition;
     [SerializeField]
-    private Transition downTransition;
+    private Transition bottomTransition;
     [SerializeField]
     private Transition rightTransition;
 
@@ -34,13 +34,9 @@ public class TransitionManager : MonoBehaviour
 
     private float tValue = 0.0f;
 
-    //bools to be used for later AI use
-    private bool playerIsUp = false;
-    private bool playerIsLeft = false;
-    private bool playerIsDown = false;
-    private bool playerIsRight = false;
-
     private bool isTransitioning = false;
+
+    private char playerCurrentArea = 'M';
 
     // Start is called before the first frame update
     void Start()
@@ -52,37 +48,39 @@ public class TransitionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameraPosChange(checkTransitionTriggers(), Time.deltaTime);
+        cameraPosChange(checkTransitionTriggers(), Time.unscaledDeltaTime);
+
+        if (isTransitioning)//will stop movement and animations while camera is moving
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
     }
 
     Transform checkTransitionTriggers()//function checks if any of the transition triggers have been tripped and returns correct position for camera to lerp to
     {
-        if(upTransition.getTransitionTriggered())
+        if(topTransition.getTransitionTriggered())
         {
-            playerIsUp = true;
+            playerCurrentArea = 'U';
             return upCameraPos;
         }
         else if(leftTransition.getTransitionTriggered())
         {
-            playerIsLeft = true;
+            playerCurrentArea = 'L';
             return leftCameraPos;
         }
-        else if (downTransition.getTransitionTriggered())
+        else if (bottomTransition.getTransitionTriggered())
         {
-            playerIsDown = true;
+            playerCurrentArea = 'B';
             return downCameraPos;
         }
         else if (rightTransition.getTransitionTriggered())
         {
-            playerIsRight = true;
+            playerCurrentArea = 'R';
             return rightCameraPos;
         }
-        else//this would be for the middle camera position a no other bools are true
+        else//this would be for the middle camera position
         {
-            playerIsUp = false;
-            playerIsLeft = false;
-            playerIsDown = false;
-            playerIsRight = false;
+            playerCurrentArea = 'M';
             return middleCameraPos;
         }
     }
@@ -104,29 +102,13 @@ public class TransitionManager : MonoBehaviour
             isTransitioning = false;
         }
     }
-
-    public bool getPlayerisUp()
-    {
-        return playerIsUp;
-    }
-
-    public bool getPlayerisLeft()
-    {
-        return playerIsLeft;
-    }
-
-    public bool getPlayerisDown()
-    {
-        return playerIsDown;
-    }
-
-    public bool getPlayerisRight()
-    {
-        return playerIsRight;
-    }
-
     public bool getIsTransitioning()
     {
         return isTransitioning;
+    }
+
+    public char getPlayerCurrentArea()
+    {
+        return playerCurrentArea;
     }
 }
