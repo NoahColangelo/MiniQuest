@@ -9,16 +9,16 @@ public class Gem : MonoBehaviour
 
     private bool isInteractable = true;//will make the gem uninteractable when needed
 
-    public bool getIsInteractable()
+    public bool GetIsInteractable()
     {
         return isInteractable;
     }
-    public void setIsInteractable(bool interactable)
+    public void SetIsInteractable(bool interactable)
     {
         isInteractable = interactable;
     }
 
-    public string getColour()
+    public string GetColour()
     {
         return colour;
     }

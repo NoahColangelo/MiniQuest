@@ -20,6 +20,7 @@ public class EnemyManager : MonoBehaviour
     private Transform[] enemyBottomSpawns = new Transform[8];
 
     private TransitionManager transitionManager;
+    private HeartManager heartManager;
 
     //these hold the runtime animation controllers for the enemy types
     [SerializeField]
@@ -28,12 +29,13 @@ public class EnemyManager : MonoBehaviour
     private RuntimeAnimatorController TreantController;
 
     //timer variables for spawning in enemies
-    private float spawnTimer = 5.0f;
+    private const float spawnTimer = 5.0f;
     private float timer = 0.0f;
 
     void Start()
     {
         transitionManager = FindObjectOfType<TransitionManager>();
+        heartManager = FindObjectOfType<HeartManager>();
 
         if (enemy == null)
         {
@@ -52,44 +54,52 @@ public class EnemyManager : MonoBehaviour
     {
         if (timer >= spawnTimer)//spawn timer
         {
-            spawnEnemy();
+            SpawnEnemy();
             timer = 0;
         }
         else
             timer += Time.deltaTime;
 
-        despawnEnemy();
+        DespawnEnemy();
     }
 
-    void spawnEnemy()
+    void SpawnEnemy()
     {
         for(int i = 0; i < enemyPool.Length; i++)
         {
             if (!enemyPool[i].gameObject.activeInHierarchy)//checks if an enemy is not yet active, meaning available
             {
                 enemyPool[i].gameObject.SetActive(true);
-                enemyPool[i].setEnemyType(enemyType(enemyPool[i]));//sets the enemy type
-                enemyPool[i].gameObject.transform.position = checkSpawnArea(enemyPool[i]);//selects the spawn position
+                enemyPool[i].SetEnemyType(EnemyType(enemyPool[i]));//sets the enemy type
+                enemyPool[i].gameObject.transform.position = CheckSpawnArea(enemyPool[i]);//selects the spawn position
                 break;
             }
         }
     }
 
-    void despawnEnemy()
+    void DespawnEnemy()
     {
         for (int i = 0; i < enemyPool.Length; i++)
         {
-            if (enemyPool[i].gameObject.activeInHierarchy && enemyPool[i].getIsDead() ||//checks if the enemy is active and is dead
-                enemyPool[i].getEnemySpawnArea() != transitionManager.getPlayerCurrentArea())//checks if the player has left the area, if yes then the enemies will despawn
+            if (enemyPool[i].gameObject.activeInHierarchy && enemyPool[i].GetIsDead())//checks if the enemy is active and is dead
+            {
+                heartManager.DropHeart(enemyPool[i].gameObject.transform.position);// roll to see if a heart will drop where the enemy has died
+
+                enemyPool[i].gameObject.transform.position = Vector2.zero;
+                enemyPool[i].ResetHealth();//resets the health and isDead bool on the enemy
+                enemyPool[i].gameObject.SetActive(false);//deactivates enemy if they are dead
+            }
+            else if(enemyPool[i].gameObject.activeInHierarchy &&
+                enemyPool[i].GetEnemySpawnArea() != transitionManager.GetPlayerCurrentArea())//checks if the player has left the area, if yes then the enemies will despawn
             {
                 enemyPool[i].gameObject.transform.position = Vector2.zero;
-                enemyPool[i].resetHealth();//resets the health and isDead bool on the enemy
+                enemyPool[i].ResetHealth();//resets the health and isDead bool on the enemy
                 enemyPool[i].gameObject.SetActive(false);//deactivates enemy if they are dead
             }
         }
     }
 
-    private char enemyType(EnemyAI enemy)
+    private char EnemyType(EnemyAI enemy)
     {
         float rand = Random.Range(0.0f, 10.0f);//random number between 0 and 10
 
@@ -105,33 +115,33 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    private Vector2 checkSpawnArea(EnemyAI enemy)
+    private Vector2 CheckSpawnArea(EnemyAI enemy)
     {
         int rand;
-        switch (transitionManager.getPlayerCurrentArea())//switch that checksthe current area of the player so enemies will spawn accordingly
+        switch (transitionManager.GetPlayerCurrentArea())//switch that checksthe current area of the player so enemies will spawn accordingly
         {
             case 'L':
                 rand = (int)Random.Range(0.0f, enemyLeftSpawns.Length);
-                enemy.setEnemySpawnArea('L');
+                enemy.SetEnemySpawnArea('L');
                 return enemyLeftSpawns[rand].position;
 
             case 'R':
                 rand = (int)Random.Range(0.0f, enemyRightSpawns.Length);
-                enemy.setEnemySpawnArea('R');
+                enemy.SetEnemySpawnArea('R');
                 return enemyRightSpawns[rand].position;
 
             case 'U':
                 rand = (int)Random.Range(0.0f, enemyTopSpawns.Length);
-                enemy.setEnemySpawnArea('T');
+                enemy.SetEnemySpawnArea('T');
                 return enemyTopSpawns[rand].position;
 
             case 'B':
                 rand = (int)Random.Range(0.0f, enemyBottomSpawns.Length);
-                enemy.setEnemySpawnArea('B');
+                enemy.SetEnemySpawnArea('B');
                 return enemyBottomSpawns[rand].position;
 
             default://will instantly kill the enemies that spawn when player is in the middle area
-                enemy.setIsDead(true);
+                enemy.SetIsDead(true);
                 return Vector2.zero;
         }
 

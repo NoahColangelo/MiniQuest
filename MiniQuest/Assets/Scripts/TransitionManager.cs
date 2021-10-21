@@ -48,7 +48,7 @@ public class TransitionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameraPosChange(checkTransitionTriggers(), Time.unscaledDeltaTime);
+        CameraPosChange(CheckTransitionTriggers(), Time.unscaledDeltaTime);
 
         if (isTransitioning)//will stop movement and animations while camera is moving
             Time.timeScale = 0;
@@ -56,24 +56,24 @@ public class TransitionManager : MonoBehaviour
             Time.timeScale = 1;
     }
 
-    Transform checkTransitionTriggers()//function checks if any of the transition triggers have been tripped and returns correct position for camera to lerp to
+    Transform CheckTransitionTriggers()//function checks if any of the transition triggers have been tripped and returns correct position for camera to lerp to
     {
-        if(topTransition.getTransitionTriggered())
+        if(topTransition.GetTransitionTriggered())
         {
             playerCurrentArea = 'U';
             return upCameraPos;
         }
-        else if(leftTransition.getTransitionTriggered())
+        else if(leftTransition.GetTransitionTriggered())
         {
             playerCurrentArea = 'L';
             return leftCameraPos;
         }
-        else if (bottomTransition.getTransitionTriggered())
+        else if (bottomTransition.GetTransitionTriggered())
         {
             playerCurrentArea = 'B';
             return downCameraPos;
         }
-        else if (rightTransition.getTransitionTriggered())
+        else if (rightTransition.GetTransitionTriggered())
         {
             playerCurrentArea = 'R';
             return rightCameraPos;
@@ -85,7 +85,7 @@ public class TransitionManager : MonoBehaviour
         }
     }
 
-    void cameraPosChange(Transform newPos, float dt)//interpolates the camera to its different positions
+    void CameraPosChange(Transform newPos, float dt)//interpolates the camera to its different positions
     {
         //checks if the transition has ended and if the camera is already in the interpolated position
         if (tValue < interpolateDuration && currentCameraPos.position != newPos.position)
@@ -102,12 +102,12 @@ public class TransitionManager : MonoBehaviour
             isTransitioning = false;
         }
     }
-    public bool getIsTransitioning()
+    public bool GetIsTransitioning()
     {
         return isTransitioning;
     }
 
-    public char getPlayerCurrentArea()
+    public char GetPlayerCurrentArea()
     {
         return playerCurrentArea;
     }

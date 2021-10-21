@@ -20,17 +20,17 @@ public class EnemyAI : MonoBehaviour
     private Path path;
 
     private int currentWayPoint = 0;
-    private float nextWaypointDist = 0.5f;
+    private const float nextWaypointDist = 0.5f;
 
     //animation variables
     private Animator animator;
-    private float animDelayTimer = 0.3f;
+    private const float animDelayTimer = 0.3f;
     private float animTimer = 0.0f;
 
     //health variables
     private int health = 2;
     private bool isDead = false;
-    private float deathDelayTimer = 0.5f;
+    private const float deathDelayTimer = 0.5f;
     private float deathTimer = 0.0f;
 
     //spawning variables
@@ -48,7 +48,7 @@ public class EnemyAI : MonoBehaviour
         animator = GetComponent<Animator>();
 
         //this will cause the UpdatePath function to be called every 0.5 seconds
-        InvokeRepeating("UpdatePath", 0.0f, 0.5f);
+        InvokeRepeating(nameof(UpdatePath), 0.0f, 0.5f);
     }
 
     void UpdatePath()
@@ -115,7 +115,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.tag == "Projectile")//enemies lose health and die if hit by a projectile
+        if(collision.transform.CompareTag("Projectile"))//enemies lose health and die if hit by a projectile
         {
             health--;
 
@@ -127,30 +127,30 @@ public class EnemyAI : MonoBehaviour
     }
 
     //GETTERS, SETTERS, AND RESETERS
-    public bool getIsDead()
+    public bool GetIsDead()
     {
         return isDead;
     }
-    public void setIsDead(bool temp)
+    public void SetIsDead(bool temp)
     {
         isDead = temp;
     }
-    public void resetHealth()
+    public void ResetHealth()
     {
         isDead = false;
         health = 2;
     }
 
-    public void setEnemyType(char type)
+    public void SetEnemyType(char type)
     {
         enemyType = type;
     }
 
-    public char getEnemySpawnArea()
+    public char GetEnemySpawnArea()
     {
         return enemySpawnArea;
     }
-    public void setEnemySpawnArea(char spawnArea)
+    public void SetEnemySpawnArea(char spawnArea)
     {
         enemySpawnArea = spawnArea;
     }

@@ -22,7 +22,7 @@ public class AltarManager : MonoBehaviour
         {
             for (int i = 0; i < gemPlacements.Length; i++)//a for loop to check if all gemPlacements have a gem
             {
-                if (gemPlacements[i].getGemPlaced())
+                if (gemPlacements[i].GetGemPlaced())
                     gemPlacedCount++;//counts when a gemPlacement has a gem
             }
 
@@ -36,12 +36,12 @@ public class AltarManager : MonoBehaviour
         }
     }
 
-    public string getColour()
+    public string GetColour()
     {
         return colour;
     }
 
-    public bool getAltarComplete()
+    public bool GetAltarComplete()
     {
         return altarComplete;
     }

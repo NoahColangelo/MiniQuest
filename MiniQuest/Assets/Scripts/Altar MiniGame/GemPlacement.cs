@@ -24,7 +24,7 @@ public class GemPlacement : MonoBehaviour
             {
                 gemPlaced = true;
                 gem.transform.position = transform.position;
-                gem.GetComponent<Gem>().setIsInteractable(false);// the gem is no longer interactable
+                gem.GetComponent<Gem>().SetIsInteractable(false);// the gem is no longer interactable
             }
         }
     }
@@ -32,7 +32,7 @@ public class GemPlacement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //checks to make sure the gem is the right colour and no other gem is placed
-        if (collision.tag == "Gem" && !gemPlaced && collision.GetComponent<Gem>().getColour() == altarManager.getColour())
+        if (collision.CompareTag("Gem") && !gemPlaced && collision.GetComponent<Gem>().GetColour() == altarManager.GetColour())
         {
             gemNear = true;
             gem = collision.gameObject;
@@ -42,14 +42,14 @@ public class GemPlacement : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //sets gem to null so it does not have an effect on the gem when moved away from the triggerbox
-        if (collision.tag == "Gem" && !gemPlaced && collision.GetComponent<Gem>().getColour() == altarManager.getColour())
+        if (collision.CompareTag("Gem") && !gemPlaced && collision.GetComponent<Gem>().GetColour() == altarManager.GetColour())
         {
             gemNear = false;
             gem = null;
         }
     }
 
-    public bool getGemPlaced()
+    public bool GetGemPlaced()
     {
         return gemPlaced;
     }

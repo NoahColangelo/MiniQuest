@@ -28,9 +28,9 @@ public class DoorOpen : MonoBehaviour
         {
             for (int i = 0; i < altars.Length; i++)//a for loop to check if all altars have been complete
             {
-                if (altars[i].getAltarComplete())
+                if (altars[i].GetAltarComplete())
                 {
-                    ActivateColour(altars[i].getColour());//sets the colour of the gem to show altar is complete
+                    ActivateColour(altars[i].GetColour());//sets the colour of the gem to show altar is complete
                     altarsComplete++;//counts when an altar is complete
                 }
             }
