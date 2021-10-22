@@ -40,7 +40,7 @@ public class HealthManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.CompareTag("Enemy"))//checks is the player has collided with an enemy
+        if(collision.transform.CompareTag("Enemy") && !collision.gameObject.GetComponent<EnemyAI>().GetCanHurt())//checks is the player has collided with an enemy
         {
             LoseHeart();
         }

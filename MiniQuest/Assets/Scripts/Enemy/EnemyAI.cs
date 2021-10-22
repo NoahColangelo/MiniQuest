@@ -30,6 +30,7 @@ public class EnemyAI : MonoBehaviour
     //health variables
     private int health = 2;
     private bool isDead = false;
+    private bool canHurt = true;
     private const float deathDelayTimer = 0.5f;
     private float deathTimer = 0.0f;
 
@@ -87,6 +88,7 @@ public class EnemyAI : MonoBehaviour
             {
                 isDead = true;
                 deathTimer = 0.0f;
+                canHurt = false;
                 animator.SetBool("isDead", false);
             }
         }
@@ -135,9 +137,20 @@ public class EnemyAI : MonoBehaviour
     {
         isDead = temp;
     }
+
+    public bool GetCanHurt()
+    {
+        return isDead;
+    }
+    public void SetCanHurt(bool temp)
+    {
+        isDead = temp;
+    }
+
     public void ResetHealth()
     {
         isDead = false;
+        canHurt = true;
         health = 2;
     }
 
