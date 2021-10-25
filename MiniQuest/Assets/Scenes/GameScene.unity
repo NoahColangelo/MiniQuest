@@ -2520,6 +2520,7 @@ MonoBehaviour:
   - {fileID: 1352093232}
   - {fileID: 1225653052}
   door: {fileID: 863341496}
+  doorOpen: {fileID: 844060282}
   redGem: {fileID: 490964879}
   pinkGem: {fileID: 2081842469}
   greenGem: {fileID: 624135570}
@@ -3474,11 +3475,11 @@ GameObject:
   - component: {fileID: 844060284}
   m_Layer: 8
   m_Name: Door Open
-  m_TagString: Untagged
+  m_TagString: DoorOpen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &844060283
 Transform:
   m_ObjectHideFlags: 0

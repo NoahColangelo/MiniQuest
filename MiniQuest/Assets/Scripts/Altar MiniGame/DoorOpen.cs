@@ -8,6 +8,8 @@ public class DoorOpen : MonoBehaviour
     private AltarManager[] altars = new AltarManager[4];//holds the altars
     [SerializeField]
     private GameObject door;//holds the door tilemap to be disabled when all altars are complete
+    [SerializeField]
+    private GameObject doorOpen;//holds the doorOpen tilemap to be enabled when all altars are complete
 
     [SerializeField]
     private GameObject redGem;
@@ -18,13 +20,13 @@ public class DoorOpen : MonoBehaviour
     [SerializeField]
     private GameObject blueGem;
 
-    private bool doorOpen = false;
+    private bool altarGameFinish = false;
 
     private int altarsComplete = 0;
 
     void Update()
     {
-        if (!doorOpen)
+        if (!altarGameFinish)
         {
             for (int i = 0; i < altars.Length; i++)//a for loop to check if all altars have been complete
             {
@@ -37,8 +39,9 @@ public class DoorOpen : MonoBehaviour
 
             if (altarsComplete == 3)//once all altars are complete the door will open
             {
-                doorOpen = true;
+                altarGameFinish = true;
                 door.SetActive(false);
+                doorOpen.SetActive(true);
             }
             else//else resets altarsCompleteCount
                 altarsComplete = 0;

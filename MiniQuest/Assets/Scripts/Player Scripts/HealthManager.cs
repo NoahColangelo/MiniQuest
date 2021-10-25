@@ -15,6 +15,8 @@ public class HealthManager : MonoBehaviour
 
     private bool dead = false;
 
+    private bool gameFinish = false;
+
     [SerializeField]
     private GameObject[] health = new GameObject[3];//holds the hearts that are in the UI
 
@@ -43,6 +45,12 @@ public class HealthManager : MonoBehaviour
         if(collision.transform.CompareTag("Enemy") && !collision.gameObject.GetComponent<EnemyAI>().GetCanHurt())//checks is the player has collided with an enemy
         {
             LoseHeart();
+        }
+        
+        if(collision.transform.CompareTag("DoorOpen") && !gameFinish)
+        {
+            gameFinish = true;
+            SceneManager.LoadScene(sceneName: "GameCompleteScene");
         }
     }
 

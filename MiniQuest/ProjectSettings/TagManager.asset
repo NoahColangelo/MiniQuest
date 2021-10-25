@@ -12,6 +12,7 @@ TagManager:
   - Water
   - Heart
   - GemPlacement
+  - DoorOpen
   layers:
   - Default
   - TransparentFX

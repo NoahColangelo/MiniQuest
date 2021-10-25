@@ -81,7 +81,7 @@ public class EnemyManager : MonoBehaviour
     {
         for (int i = 0; i < enemyPool.Length; i++)
         {
-            if (enemyPool[i].gameObject.activeInHierarchy && enemyPool[i].GetIsDead())//checks if the enemy is active and is dead
+            if (enemyPool[i].gameObject.activeInHierarchy && enemyPool[i].GetIsDead() && enemyPool[i].GetEnemySpawnArea() == transitionManager.GetPlayerCurrentArea())//checks if the enemy is active and is dead
             {
                 heartManager.DropHeart(enemyPool[i].gameObject.transform.position);// roll to see if a heart will drop where the enemy has died
 
