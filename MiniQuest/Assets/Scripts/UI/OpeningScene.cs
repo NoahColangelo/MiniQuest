@@ -8,8 +8,17 @@ public class OpeningScene : MonoBehaviour
 {
     private InputManager inputManager;
 
+    [SerializeField]
+    private GameObject HowToPlay;
+    [SerializeField]
+    private GameObject StartButton;
+    [SerializeField]
+    private GameObject QuitButton;
+
     private void Awake()
     {
+        HowToPlay.SetActive(false);
+
         inputManager = new InputManager();
 
         inputManager.UI.Enable();//enables the UI actionmap for the inputmanager
@@ -21,9 +30,20 @@ public class OpeningScene : MonoBehaviour
         SceneManager.LoadScene(sceneName:"GameScene");//sends player to GameScene where the main game is
     }
 
-    public void OnClickOptions()
+    public void OnClickHowToPlay()
     {
-        Debug.Log("options clicked");
+        if (!HowToPlay.activeInHierarchy)
+        {
+            HowToPlay.SetActive(true);
+            StartButton.SetActive(false);
+            QuitButton.SetActive(false);
+        }
+        else
+        {
+            HowToPlay.SetActive(false);
+            StartButton.SetActive(true);
+            QuitButton.SetActive(true);
+        }
     }
 
     public void OnClickExit()
