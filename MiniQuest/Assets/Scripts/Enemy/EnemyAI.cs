@@ -7,6 +7,24 @@ public class EnemyAI : MonoBehaviour
 {
     //START OF VARIABLES
 
+    //audio clips
+    [SerializeField]
+    private AudioClip moleSpawn;
+    [SerializeField]
+    private AudioClip moleHit;
+    [SerializeField]
+    private AudioClip moleDie;
+
+    [SerializeField]
+    private AudioClip treantSpawn;
+    [SerializeField]
+    private AudioClip treantHit;
+    [SerializeField]
+    private AudioClip treantDie;
+
+    private AudioSource audioSource;
+    private bool hasMadeSpawnSound = false;
+
     //movement variables
     [SerializeField]
     private float movementSpeed = 5.0f;
@@ -30,8 +48,7 @@ public class EnemyAI : MonoBehaviour
     //health variables
     private int health = 2;
     private bool isDead = false;
-    private bool canHurt = true;
-    private const float deathDelayTimer = 0.5f;
+    private const float deathDelayTimer = 1.0f;
     private float deathTimer = 0.0f;
 
     //spawning variables
@@ -45,7 +62,7 @@ public class EnemyAI : MonoBehaviour
         target = FindObjectOfType<PlayerControls>().GetComponent<Transform>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-
+        audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
 
         //this will cause the UpdatePath function to be called every 0.5 seconds
@@ -69,6 +86,8 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        playSpawnSound();//plays the right spawn sound depending on which enemy spawns
+
         if (animTimer >= animDelayTimer)//an anim delay to prevent the animation from flickering between states
         {
             animator.SetFloat("Horizontal_Movement", Mathf.Round(direction.x));
@@ -88,7 +107,6 @@ public class EnemyAI : MonoBehaviour
             {
                 isDead = true;
                 deathTimer = 0.0f;
-                canHurt = false;
                 animator.SetBool("isDead", false);
             }
         }
@@ -121,10 +139,43 @@ public class EnemyAI : MonoBehaviour
         {
             health--;
 
-            if(health <= 0)
+            if (health <= 0)
             {
                 animator.SetBool("isDead", true);
+
+                if (enemyType == 'M')//plays the enemy death sound
+                    audioSource.PlayOneShot(moleDie);
+                else if (enemyType == 'T')
+                    audioSource.PlayOneShot(treantDie);
+
+                GetComponent<Collider2D>().enabled = false;
             }
+            else//plays enemy hit sound when hit but not dead
+            {
+                if (enemyType == 'M')
+                    audioSource.PlayOneShot(moleHit);
+                else if (enemyType == 'T')
+                    audioSource.PlayOneShot(treantHit);
+            }
+
+            
+        }
+    }
+
+    void playSpawnSound()
+    {
+        if(!hasMadeSpawnSound)
+        {
+            if (enemyType == 'M')
+            {
+                audioSource.PlayOneShot(moleSpawn);
+            }
+            else if (enemyType == 'T')
+            {
+                audioSource.PlayOneShot(treantSpawn);
+            }
+
+            hasMadeSpawnSound = true;
         }
     }
 
@@ -150,8 +201,9 @@ public class EnemyAI : MonoBehaviour
     public void ResetHealth()
     {
         isDead = false;
-        canHurt = true;
         health = 2;
+        hasMadeSpawnSound = false;
+        GetComponent<Collider2D>().enabled = true;
     }
 
     public void SetEnemyType(char type)

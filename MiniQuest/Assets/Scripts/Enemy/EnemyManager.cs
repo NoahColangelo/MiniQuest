@@ -144,36 +144,5 @@ public class EnemyManager : MonoBehaviour
                 enemy.SetIsDead(true);
                 return Vector2.zero;
         }
-
-
-        //if(transitionManager.getPlayerCurrentArea() == 'L')
-        //{
-        //    int rand = (int)Random.Range(0.0f, enemyLeftSpawns.Length);
-        //    enemy.setEnemySpawnArea('L');
-        //    return enemyLeftSpawns[rand].position;
-        //}
-        //else if(transitionManager.getPlayerCurrentArea() == 'R')
-        //{
-        //    int rand = (int)Random.Range(0.0f, enemyRightSpawns.Length);
-        //    enemy.setEnemySpawnArea('R');
-        //    return enemyRightSpawns[rand].position;
-        //}
-        //else if (transitionManager.getPlayerCurrentArea() == 'U')
-        //{
-        //    int rand = (int)Random.Range(0.0f, enemyTopSpawns.Length);
-        //    enemy.setEnemySpawnArea('T');
-        //    return enemyTopSpawns[rand].position;
-        //}
-        //else if(transitionManager.getPlayerCurrentArea() == 'B')
-        //{
-        //    int rand = (int)Random.Range(0.0f, enemyBottomSpawns.Length);
-        //    enemy.setEnemySpawnArea('B');
-        //    return enemyBottomSpawns[rand].position;
-        //}
-        //else
-        //{
-        //    enemy.setIsDead(true);
-        //    return Vector2.zero;
-        //}
     }
 }

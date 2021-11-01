@@ -17,8 +17,16 @@ public class HealthManager : MonoBehaviour
 
     private bool gameFinish = false;
 
+    private AudioSource audioSource;
+    [SerializeField] AudioClip playerHit;
+
     [SerializeField]
     private GameObject[] health = new GameObject[3];//holds the hearts that are in the UI
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -33,7 +41,7 @@ public class HealthManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Heart") && hearts < 3)//checksi fthe player has collided with a heart
+        if(collision.CompareTag("Heart") && hearts < 3)//checks if the player has collided with a heart
         {
             GainHeart();
             collision.GetComponent<Heart>().SetHeartUsed(true);
@@ -42,8 +50,9 @@ public class HealthManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.CompareTag("Enemy") && !collision.gameObject.GetComponent<EnemyAI>().GetCanHurt())//checks is the player has collided with an enemy
+        if(collision.transform.CompareTag("Enemy"))//checks if the player has collided with an enemy
         {
+            audioSource.PlayOneShot(playerHit);//plays player hit audio
             LoseHeart();
         }
         

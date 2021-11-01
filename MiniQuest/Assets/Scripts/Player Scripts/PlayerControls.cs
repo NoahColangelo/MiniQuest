@@ -19,6 +19,10 @@ public class PlayerControls : MonoBehaviour
     private Rigidbody2D rb;
     private Animator playerAnimator;
 
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioClip bowShot;
+
     private Vector2 movementVector;//vector that stores the vec2 from the input action movement
     private Vector2 prevMovementVector = new Vector2(0.0f,-1.0f);//vector that stores the above vectors last value that was a non zero value
 
@@ -53,6 +57,7 @@ public class PlayerControls : MonoBehaviour
     {
         inputManager = new InputManager();
 
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
     }//awake Function
@@ -96,6 +101,7 @@ public class PlayerControls : MonoBehaviour
         {
             isAttacking = true;
             playerAnimator.SetBool("Attack", true);//sets the attack param in animation to true
+            audioSource.PlayOneShot(bowShot);
         }
     }
     private void Interact(InputAction.CallbackContext obj)//the interacting function
