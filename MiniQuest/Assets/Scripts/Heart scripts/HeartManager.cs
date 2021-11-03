@@ -52,8 +52,12 @@ public class HeartManager : MonoBehaviour
     {
         for (int i = 0; i < heartDrops.Length; i++)
         {
-            if (heartDrops[i].activeInHierarchy && heartDrops[i].GetComponent<Heart>().GetHeartUsed()//if the heart has been used by the player, then recycle
-                || heartDrops[i].GetComponent<Heart>().GetHeartSpawnArea() != transitionManager.GetPlayerCurrentArea())//or if the player has moved to a different area, then recycle
+            if (heartDrops[i].activeInHierarchy && heartDrops[i].GetComponent<Heart>().GetHeartUsed())//if the heart has been used by the player, then recycle
+            {
+                heartDrops[i].SetActive(false);
+                heartDrops[i].transform.position = Vector2.zero;
+            }
+            else if (heartDrops[i].GetComponent<Heart>().GetHeartSpawnArea() != transitionManager.GetPlayerCurrentArea())// else if the player has moved areas despawn the heart
             {
                 heartDrops[i].SetActive(false);
                 heartDrops[i].transform.position = Vector2.zero;

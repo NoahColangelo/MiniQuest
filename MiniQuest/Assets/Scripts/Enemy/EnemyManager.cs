@@ -32,6 +32,8 @@ public class EnemyManager : MonoBehaviour
     private const float spawnTimer = 5.0f;
     private float timer = 0.0f;
 
+    private float currentEnemiesNum = 0;
+
     void Start()
     {
         transitionManager = FindObjectOfType<TransitionManager>();
@@ -52,7 +54,7 @@ public class EnemyManager : MonoBehaviour
 
     void Update()
     {
-        if (timer >= spawnTimer)//spawn timer
+        if (timer >= spawnTimer + currentEnemiesNum)//spawn timer
         {
             SpawnEnemy();
             timer = 0;
@@ -72,6 +74,8 @@ public class EnemyManager : MonoBehaviour
                 enemyPool[i].gameObject.SetActive(true);
                 enemyPool[i].SetEnemyType(EnemyType(enemyPool[i]));//sets the enemy type
                 enemyPool[i].gameObject.transform.position = CheckSpawnArea(enemyPool[i]);//selects the spawn position
+
+                currentEnemiesNum++;
                 break;
             }
         }
@@ -88,6 +92,8 @@ public class EnemyManager : MonoBehaviour
                 enemyPool[i].gameObject.transform.position = Vector2.zero;
                 enemyPool[i].ResetHealth();//resets the health and isDead bool on the enemy
                 enemyPool[i].gameObject.SetActive(false);//deactivates enemy if they are dead
+
+                currentEnemiesNum--;
             }
             else if(enemyPool[i].gameObject.activeInHierarchy &&
                 enemyPool[i].GetEnemySpawnArea() != transitionManager.GetPlayerCurrentArea())//checks if the player has left the area, if yes then the enemies will force despawn
@@ -95,6 +101,8 @@ public class EnemyManager : MonoBehaviour
                 enemyPool[i].gameObject.transform.position = Vector2.zero;
                 enemyPool[i].ResetHealth();//resets the health and isDead bool on the enemy
                 enemyPool[i].gameObject.SetActive(false);//deactivates enemy if they are dead
+
+                currentEnemiesNum--;
             }
         }
     }
