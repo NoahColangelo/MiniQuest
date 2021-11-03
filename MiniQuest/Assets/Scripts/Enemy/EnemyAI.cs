@@ -162,11 +162,11 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void playSpawnSound()
+    void playSpawnSound()//this goes off only once when the enemy spawns in
     {
         if(!hasMadeSpawnSound)
         {
-            if (enemyType == 'M')
+            if (enemyType == 'M')//changes based on the enemy type
             {
                 audioSource.PlayOneShot(moleSpawn);
             }

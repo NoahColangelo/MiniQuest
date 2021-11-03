@@ -10,9 +10,13 @@ public class HeartManager : MonoBehaviour
 
     private GameObject[] heartDrops = new GameObject[3];//object pool for hearts to drop from enemies when they die
 
+    private TransitionManager transitionManager;
+
     void Start()
     {
-        for(int i = 0; i < heartDrops.Length; i++)//instantiates the the hearts
+        transitionManager = FindObjectOfType<TransitionManager>();
+
+        for (int i = 0; i < heartDrops.Length; i++)//instantiates the the hearts
         {
             heartDrops[i] = Instantiate(heart);
             heartDrops[i].transform.position = Vector2.zero;
@@ -25,7 +29,7 @@ public class HeartManager : MonoBehaviour
         CleanUpHearts();
     }
 
-    public void DropHeart(Vector2 position)//function calls when an enemy is killed
+    public void DropHeart(Vector2 position, char spawnArea)//function calls when an enemy is killed
     {
         int rand = Mathf.RoundToInt( Random.Range(0, 10));// 50% to drop a heart on death
 
@@ -37,6 +41,7 @@ public class HeartManager : MonoBehaviour
                 {
                     heartDrops[i].SetActive(true);
                     heartDrops[i].transform.position = position;//sets position of the heart to the enemy
+                    heartDrops[i].GetComponent<Heart>().SetHeartSpawnArea(spawnArea);
                     break;
                 }
             }
@@ -47,10 +52,12 @@ public class HeartManager : MonoBehaviour
     {
         for (int i = 0; i < heartDrops.Length; i++)
         {
-            if (heartDrops[i].activeInHierarchy && heartDrops[i].GetComponent<Heart>().GetHeartUsed())//if the heart has been used by the player, then recycle
+            if (heartDrops[i].activeInHierarchy && heartDrops[i].GetComponent<Heart>().GetHeartUsed()//if the heart has been used by the player, then recycle
+                || heartDrops[i].GetComponent<Heart>().GetHeartSpawnArea() != transitionManager.GetPlayerCurrentArea())//or if the player has moved to a different area, then recycle
             {
                 heartDrops[i].SetActive(false);
                 heartDrops[i].transform.position = Vector2.zero;
+                heartDrops[i].GetComponent<Heart>().SetHeartSpawnArea('M');
             }
         }
     }

@@ -83,14 +83,14 @@ public class EnemyManager : MonoBehaviour
         {
             if (enemyPool[i].gameObject.activeInHierarchy && enemyPool[i].GetIsDead() && enemyPool[i].GetEnemySpawnArea() == transitionManager.GetPlayerCurrentArea())//checks if the enemy is active and is dead
             {
-                heartManager.DropHeart(enemyPool[i].gameObject.transform.position);// roll to see if a heart will drop where the enemy has died
+                heartManager.DropHeart(enemyPool[i].gameObject.transform.position, enemyPool[i].GetEnemySpawnArea());// roll to see if a heart will drop where the enemy has died
 
                 enemyPool[i].gameObject.transform.position = Vector2.zero;
                 enemyPool[i].ResetHealth();//resets the health and isDead bool on the enemy
                 enemyPool[i].gameObject.SetActive(false);//deactivates enemy if they are dead
             }
             else if(enemyPool[i].gameObject.activeInHierarchy &&
-                enemyPool[i].GetEnemySpawnArea() != transitionManager.GetPlayerCurrentArea())//checks if the player has left the area, if yes then the enemies will despawn
+                enemyPool[i].GetEnemySpawnArea() != transitionManager.GetPlayerCurrentArea())//checks if the player has left the area, if yes then the enemies will force despawn
             {
                 enemyPool[i].gameObject.transform.position = Vector2.zero;
                 enemyPool[i].ResetHealth();//resets the health and isDead bool on the enemy

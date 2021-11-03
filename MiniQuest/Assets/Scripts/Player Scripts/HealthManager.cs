@@ -11,11 +11,16 @@ public class HealthManager : MonoBehaviour
     [SerializeField]
     private Sprite deadHeart;
 
-    private int hearts = 3;
+    private int hearts = 3;//number of health
 
-    private bool dead = false;
+    private bool dead = false;//is the player dead?
 
-    private bool gameFinish = false;
+    private bool gameFinish = false;//has the player entered the door
+
+    //timer variables
+    private float invulnerabilityTime = 1.0f;
+    private float timer = 0.0f;
+    private bool playerInvulnerable = false;
 
     private AudioSource audioSource;
     [SerializeField] AudioClip playerHit;
@@ -30,11 +35,12 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
+        invulnerableTimer(Time.deltaTime);
+
         if(hearts == 0 && !dead)//checks if the player is dead
         {
             dead = true;
             //player is dead, game over
-            Debug.Log("you are dead");
             SceneManager.LoadScene(sceneName: "GameOverScene");
         }
     }
@@ -48,12 +54,13 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if(collision.transform.CompareTag("Enemy"))//checks if the player has collided with an enemy
+        if(collision.transform.CompareTag("Enemy") && !playerInvulnerable)//checks if the player has collided with an enemy and vulnerable to damage
         {
             audioSource.PlayOneShot(playerHit);//plays player hit audio
             LoseHeart();
+            playerInvulnerable = true;
         }
         
         if(collision.transform.CompareTag("DoorOpen") && !gameFinish)
@@ -88,6 +95,19 @@ public class HealthManager : MonoBehaviour
                 health[i].GetComponent<Image>().sprite = fullHeart;
                 break;
             }
+        }
+    }
+
+    private void invulnerableTimer(float dt)//an invulnerability timer for when the player gets hit
+    {
+        if (playerInvulnerable && timer < invulnerabilityTime)
+        {
+            timer += dt;
+        }
+        else if (timer > invulnerabilityTime)//once timer has finished
+        {
+            timer = 0.0f;
+            playerInvulnerable = false;
         }
     }
 }

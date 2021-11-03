@@ -5,6 +5,7 @@ using UnityEngine;
 public class Heart : MonoBehaviour
 {
     private bool heartUsed = false;//lets game know the heart has been used by the player
+    private char heartSpawnArea;//area where the heart is spawned in
 
     public bool GetHeartUsed()
     {
@@ -15,5 +16,12 @@ public class Heart : MonoBehaviour
         heartUsed = set;
     }
 
-
+    public char GetHeartSpawnArea()
+    {
+        return heartSpawnArea;
+    }
+    public void SetHeartSpawnArea(char set)
+    {
+        heartSpawnArea = set;
+    }
 }
