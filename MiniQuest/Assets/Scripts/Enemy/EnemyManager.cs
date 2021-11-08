@@ -29,7 +29,7 @@ public class EnemyManager : MonoBehaviour
     private RuntimeAnimatorController TreantController;
 
     //timer variables for spawning in enemies
-    private const float spawnTimer = 5.0f;
+    private const float spawnTimer = 6.0f;
     private float timer = 0.0f;
 
     private float currentEnemiesNum = 0;
