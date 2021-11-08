@@ -48,12 +48,7 @@ public class TransitionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CameraPosChange(CheckTransitionTriggers(), Time.unscaledDeltaTime);
-
-        if (isTransitioning)//will stop movement and animations while camera is moving
-            Time.timeScale = 0;
-        else
-            Time.timeScale = 1;
+        CameraPosChange(CheckTransitionTriggers(), Time.unscaledDeltaTime);            
     }
 
     Transform CheckTransitionTriggers()//function checks if any of the transition triggers have been tripped and returns correct position for camera to lerp to
@@ -88,18 +83,21 @@ public class TransitionManager : MonoBehaviour
     void CameraPosChange(Transform newPos, float dt)//interpolates the camera to its different positions
     {
         //checks if the transition has ended and if the camera is already in the interpolated position
-        if (tValue < interpolateDuration && currentCameraPos.position != newPos.position)
+
+        if (tValue < interpolateDuration && currentCameraPos.position != newPos.position)//during interpolation
         {
             isTransitioning = true;
             camera.transform.position = Vector3.Lerp(currentCameraPos.position, newPos.position, tValue / interpolateDuration);//the interpolation equation
             tValue += dt;//increase t value with deltatime
+            Time.timeScale = 0;
         }
-        else if (tValue >= interpolateDuration)
+        else if (tValue >= interpolateDuration)//when done interpolating
         {
             tValue = 0.0f;//resets the t value
             camera.transform.position = newPos.position;//snaps camera to position cause lerp wont be exact
             currentCameraPos = newPos;//sets the current camera pos to the new one it is on
             isTransitioning = false;
+            Time.timeScale = 1;
         }
     }
     public bool GetIsTransitioning()

@@ -29,7 +29,7 @@ public class Projectile : MonoBehaviour
 
     private void FixedUpdate()//fixed update for the movement of the projectile
     {
-        rb.MovePosition(rb.position + directionVector * projectileSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + directionVector * projectileSpeed * (Time.fixedDeltaTime * Time.timeScale));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)//checks to see if the projectile hits an enemy or blocking tile

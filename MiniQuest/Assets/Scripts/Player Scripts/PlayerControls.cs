@@ -160,7 +160,7 @@ public class PlayerControls : MonoBehaviour
     private void FixedUpdate()
     {
         //movement equation equivalent to P = p + v*t with added speed
-        rb.MovePosition(rb.position + movementVector * movementSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movementVector * movementSpeed * (Time.fixedDeltaTime * Time.timeScale));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
