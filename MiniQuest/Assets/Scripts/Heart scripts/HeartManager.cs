@@ -42,6 +42,7 @@ public class HeartManager : MonoBehaviour
                     heartDrops[i].SetActive(true);
                     heartDrops[i].transform.position = position;//sets position of the heart to the enemy
                     heartDrops[i].GetComponent<Heart>().SetHeartSpawnArea(spawnArea);
+
                     break;
                 }
             }
@@ -56,8 +57,10 @@ public class HeartManager : MonoBehaviour
             {
                 heartDrops[i].SetActive(false);
                 heartDrops[i].transform.position = Vector2.zero;
+                heartDrops[i].GetComponent<Heart>().SetHeartUsed(false);
+                heartDrops[i].GetComponent<Heart>().SetHeartSpawnArea('M');
             }
-            else if (heartDrops[i].GetComponent<Heart>().GetHeartSpawnArea() != transitionManager.GetPlayerCurrentArea())// else if the player has moved areas despawn the heart
+            else if (heartDrops[i].activeInHierarchy && heartDrops[i].GetComponent<Heart>().GetHeartSpawnArea() != transitionManager.GetPlayerCurrentArea())// else if the player has moved areas despawn the heart
             {
                 heartDrops[i].SetActive(false);
                 heartDrops[i].transform.position = Vector2.zero;
