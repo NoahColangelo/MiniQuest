@@ -30,6 +30,7 @@ public class AltarManager : MonoBehaviour
             {
                 altarComplete = true;
                 GetComponent<SpriteRenderer>().sprite = altarCompleteSprite;//changes the sprite on the altar to show completion
+                Debug.Log("altar complete");
             }
             else//else resets gemPlacedCount
                 gemPlacedCount = 0;

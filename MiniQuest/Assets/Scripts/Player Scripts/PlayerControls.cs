@@ -51,6 +51,8 @@ public class PlayerControls : MonoBehaviour
     private bool isInteracting = false;//triggers when player presses the interact button with all conditions met
     private GameObject interactingObject = null;//object to hold the interacting objects info while the player has it
 
+    private bool nearSign = false;//bool that is used to let the system know the player is near the sign to interact with it
+    private bool readSign = false;//bool to let the system know that the player is interacting with the sign
 
     //FUNCTIONS START HERE//
     private void Awake()
@@ -114,6 +116,15 @@ public class PlayerControls : MonoBehaviour
             interactingObject.transform.SetParent(null);//sets the objects parent to null(no longer the player)
             interactingObject = null;
         }
+
+        if(nearSign && !readSign)
+        {
+            readSign = true;
+        }
+        else if(nearSign && readSign)
+        {
+            readSign = false;
+        }
     }
     private void OpenMenu(InputAction.CallbackContext obj)//the menu function to open the pause menu in game
     {
@@ -156,7 +167,10 @@ public class PlayerControls : MonoBehaviour
     {
         if (collision.CompareTag("Gem"))//player is interacting with a gem object
             nearInteractableObject = true;
-            
+
+        if (collision.CompareTag("Sign"))//player is interacting with the objective sign
+            nearSign = true;
+
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -170,6 +184,9 @@ public class PlayerControls : MonoBehaviour
     {
         if (collision.CompareTag("Gem"))//player is no longer interacting with a gem object
             nearInteractableObject = false;
+
+        if (collision.CompareTag("Sign"))//player is interacting with the objective sign
+            nearSign = true;
     }
 
     private void IdleAnim()//basically a switch statement for the idle anims to function properly with the way the player was last moving
@@ -268,5 +285,14 @@ public class PlayerControls : MonoBehaviour
     public void SetReleaseProjectile(bool temp)
     {
         releaseProjectile = temp;
+    }
+
+    public bool GetReadSign()
+    {
+        return readSign;
+    }
+    public void setReadSign(bool set)
+    {
+        readSign = set;
     }
 }

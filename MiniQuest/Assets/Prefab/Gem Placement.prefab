@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7006736205340611295}
   - component: {fileID: -3095782339170457702}
   - component: {fileID: -5286824567461104485}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gem Placement
   m_TagString: GemPlacement
   m_Icon: {fileID: 0}

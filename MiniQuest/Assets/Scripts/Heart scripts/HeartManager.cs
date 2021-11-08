@@ -31,9 +31,9 @@ public class HeartManager : MonoBehaviour
 
     public void DropHeart(Vector2 position, char spawnArea)//function calls when an enemy is killed
     {
-        int rand = Mathf.RoundToInt( Random.Range(0, 10));// 50% to drop a heart on death
+        int rand = Mathf.RoundToInt( Random.Range(0, 100));// 33% to drop a heart on death
 
-        if (rand >= 5)
+        if (rand >= 33)
         {
             for (int i = 0; i < heartDrops.Length; i++)
             {

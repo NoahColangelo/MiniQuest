@@ -140,7 +140,7 @@ public class EnemyManager : MonoBehaviour
 
             case 'U':
                 rand = (int)Random.Range(0.0f, enemyTopSpawns.Length);
-                enemy.SetEnemySpawnArea('T');
+                enemy.SetEnemySpawnArea('U');
                 return enemyTopSpawns[rand].position;
 
             case 'B':

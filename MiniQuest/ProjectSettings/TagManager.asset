@@ -13,6 +13,7 @@ TagManager:
   - Heart
   - GemPlacement
   - DoorOpen
+  - Sign
   layers:
   - Default
   - TransparentFX
