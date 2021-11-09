@@ -34,7 +34,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)//checks to see if the projectile hits an enemy or blocking tile
     {
-        if(collision.transform.CompareTag("Blocking") || collision.transform.CompareTag("Enemy"))
+        if(collision.transform.CompareTag("Blocking") || collision.transform.CompareTag("Enemy") || collision.transform.CompareTag("DoorOpen"))
         {
             isDead = true;
         }

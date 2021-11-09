@@ -40,7 +40,7 @@ public class PlayerControls : MonoBehaviour
     private GameObject shootLeft;//270
 
     [SerializeField]
-    private float attackAnimDuration = 0.5f;//the animation duration
+    private float attackAnimDuration = 0.4f;//the animation duration
     private float timer = 0.0f;
     private bool isAttacking = false;
 
@@ -51,7 +51,6 @@ public class PlayerControls : MonoBehaviour
     private bool isInteracting = false;//triggers when player presses the interact button with all conditions met
     private GameObject interactingObject = null;//object to hold the interacting objects info while the player has it
 
-    private bool nearSign = false;//bool that is used to let the system know the player is near the sign to interact with it
     private bool readSign = false;//bool to let the system know that the player is interacting with the sign
 
     //FUNCTIONS START HERE//
@@ -117,11 +116,11 @@ public class PlayerControls : MonoBehaviour
             interactingObject = null;
         }
 
-        if(nearSign && !readSign)
+        if(!readSign)
         {
             readSign = true;
         }
-        else if(nearSign && readSign)
+        else if(readSign)
         {
             readSign = false;
         }
@@ -138,6 +137,7 @@ public class PlayerControls : MonoBehaviour
 
     private void Update()
     {
+
         movementVector = movement.ReadValue<Vector2>();//puts the movement vector from the input manager into a vec2
 
         if (movementVector != Vector2.zero && !isAttacking)//gets the last non zero vector from the movement vector for shooting a projectile
@@ -167,10 +167,6 @@ public class PlayerControls : MonoBehaviour
     {
         if (collision.CompareTag("Gem"))//player is interacting with a gem object
             nearInteractableObject = true;
-
-        if (collision.CompareTag("Sign"))//player is interacting with the objective sign
-            nearSign = true;
-
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -184,9 +180,6 @@ public class PlayerControls : MonoBehaviour
     {
         if (collision.CompareTag("Gem"))//player is no longer interacting with a gem object
             nearInteractableObject = false;
-
-        if (collision.CompareTag("Sign"))//player is interacting with the objective sign
-            nearSign = true;
     }
 
     private void IdleAnim()//basically a switch statement for the idle anims to function properly with the way the player was last moving

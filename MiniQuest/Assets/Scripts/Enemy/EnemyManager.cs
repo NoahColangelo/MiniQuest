@@ -22,6 +22,8 @@ public class EnemyManager : MonoBehaviour
     private TransitionManager transitionManager;
     private HeartManager heartManager;
 
+    private Transform enemyTarget;//enemy target is the players transform
+
     //these hold the runtime animation controllers for the enemy types
     [SerializeField]
     private RuntimeAnimatorController MoleController;
@@ -38,6 +40,8 @@ public class EnemyManager : MonoBehaviour
     {
         transitionManager = FindObjectOfType<TransitionManager>();
         heartManager = FindObjectOfType<HeartManager>();
+
+        enemyTarget = FindObjectOfType<PlayerControls>().transform;
 
         if (enemy == null)
         {
@@ -126,26 +130,58 @@ public class EnemyManager : MonoBehaviour
     private Vector2 CheckSpawnArea(EnemyAI enemy)
     {
         int rand;
-        switch (transitionManager.GetPlayerCurrentArea())//switch that checksthe current area of the player so enemies will spawn accordingly
+        switch (transitionManager.GetPlayerCurrentArea())//switch that checks the current area of the player so enemies will spawn accordingly
         {
             case 'L':
-                rand = (int)Random.Range(0.0f, enemyLeftSpawns.Length);
                 enemy.SetEnemySpawnArea('L');
+                while (true)
+                {
+                    rand = (int)Random.Range(0.0f, enemyLeftSpawns.Length);
+
+                    if(Vector2.Distance(enemyLeftSpawns[rand].position, enemyTarget.position) > 5.0f)
+                    {
+                        break;
+                    }
+                }
                 return enemyLeftSpawns[rand].position;
 
             case 'R':
-                rand = (int)Random.Range(0.0f, enemyRightSpawns.Length);
                 enemy.SetEnemySpawnArea('R');
+                while (true)
+                {
+                    rand = (int)Random.Range(0.0f, enemyRightSpawns.Length);
+
+                    if (Vector2.Distance(enemyRightSpawns[rand].position, enemyTarget.position) > 5.0f)
+                    {
+                        break;
+                    }
+                }
                 return enemyRightSpawns[rand].position;
 
             case 'U':
-                rand = (int)Random.Range(0.0f, enemyTopSpawns.Length);
                 enemy.SetEnemySpawnArea('U');
+                while (true)
+                {
+                    rand = (int)Random.Range(0.0f, enemyTopSpawns.Length);
+
+                    if (Vector2.Distance(enemyTopSpawns[rand].position, enemyTarget.position) > 5.0f)
+                    {
+                        break;
+                    }
+                }
                 return enemyTopSpawns[rand].position;
 
             case 'B':
-                rand = (int)Random.Range(0.0f, enemyBottomSpawns.Length);
                 enemy.SetEnemySpawnArea('B');
+                while (true)
+                {
+                    rand = (int)Random.Range(0.0f, enemyBottomSpawns.Length);
+
+                    if (Vector2.Distance(enemyBottomSpawns[rand].position, enemyTarget.position) > 5.0f)
+                    {
+                        break;
+                    }
+                }
                 return enemyBottomSpawns[rand].position;
 
             default://will instantly kill the enemies that spawn when player is in the middle area

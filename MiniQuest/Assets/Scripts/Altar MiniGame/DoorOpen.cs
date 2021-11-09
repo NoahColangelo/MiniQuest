@@ -37,7 +37,7 @@ public class DoorOpen : MonoBehaviour
                 }
             }
 
-            if (altarsComplete == 3)//once all altars are complete the door will open
+            if (altarsComplete == 4)//once all altars are complete the door will open
             {
                 altarGameFinish = true;
                 door.SetActive(false);
