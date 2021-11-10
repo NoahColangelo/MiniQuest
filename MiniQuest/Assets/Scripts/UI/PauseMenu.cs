@@ -2,13 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField]
+    private PlayerControls playerControls;
+
+    [SerializeField]
     private GameObject pauseMenu;
     [SerializeField]
-    private PlayerControls playerControls;
+    private GameObject optionsBlip;
+
+    [SerializeField]
+    private Slider soundSlider;
+    [SerializeField]
+    private Button optionsButton;
 
     private bool gamePaused = false;
 
@@ -47,6 +56,22 @@ public class PauseMenu : MonoBehaviour
 
             playerControls.GetInputManager().UI.Disable();//switches to the PlayerController ActionMap when leaving the UI
             playerControls.GetInputManager().PlayerController.Enable();
+        }
+    }
+
+    public void OnClickOptions()
+    {
+        if (!optionsBlip.activeInHierarchy)
+        {
+            optionsBlip.SetActive(true);
+
+            soundSlider.Select();
+        }
+        else
+        {
+            optionsBlip.SetActive(false);
+
+            optionsButton.GetComponent<Button>().Select();
         }
     }
 

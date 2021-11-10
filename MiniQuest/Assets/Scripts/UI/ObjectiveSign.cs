@@ -18,7 +18,10 @@ public class ObjectiveSign : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerControls>();
+
+        objectiveBlip.SetActive(true);
         questionMark.SetActive(false);
+
         Time.timeScale = 0.0f;
     }
 

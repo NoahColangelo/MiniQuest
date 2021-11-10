@@ -98,7 +98,7 @@ public class PlayerControls : MonoBehaviour
 
     private void Attack(InputAction.CallbackContext obj)//the attacking function
     {
-        if (!isAttacking && !isInteracting)//check to see if the attack is already in progress
+        if (!isAttacking && !isInteracting && Time.timeScale == 1.0f)//check to see if the attack is already in progress
         {
             isAttacking = true;
             playerAnimator.SetBool("Attack", true);//sets the attack param in animation to true

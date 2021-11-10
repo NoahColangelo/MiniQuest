@@ -3,21 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class OpeningScene : MonoBehaviour
 {
     private InputManager inputManager;
 
     [SerializeField]
-    private GameObject HowToPlay;
+    private GameObject howToPlayBlip;
     [SerializeField]
-    private GameObject StartButton;
+    private GameObject optionsBlip;
+
     [SerializeField]
-    private GameObject QuitButton;
+    private GameObject startButton;
+    [SerializeField]
+    private GameObject howToPlayButton;
+    [SerializeField]
+    private GameObject optionsButton;
+    [SerializeField]
+    private GameObject quitButton;
+
+    [SerializeField]
+    private Slider bgmSlider;
+    [SerializeField]
+    private Button leaveHTP;
 
     private void Awake()
     {
-        HowToPlay.SetActive(false);
+        howToPlayBlip.SetActive(false);
+        optionsBlip.SetActive(false);
 
         inputManager = new InputManager();
 
@@ -30,19 +44,55 @@ public class OpeningScene : MonoBehaviour
         SceneManager.LoadScene(sceneName:"GameScene");//sends player to GameScene where the main game is
     }
 
-    public void OnClickHowToPlay()
+    public void OnClickHowToPlay()//when the player clicks the how to play button
     {
-        if (!HowToPlay.activeInHierarchy)
+        if (!howToPlayBlip.activeInHierarchy)
         {
-            HowToPlay.SetActive(true);
-            StartButton.SetActive(false);
-            QuitButton.SetActive(false);
+            howToPlayBlip.SetActive(true);
+
+            startButton.SetActive(false);
+            quitButton.SetActive(false);
+            optionsButton.SetActive(false);
+            howToPlayButton.SetActive(false);
+
+            leaveHTP.Select();//sets the leave how to play button to select for non mouse users
         }
         else
         {
-            HowToPlay.SetActive(false);
-            StartButton.SetActive(true);
-            QuitButton.SetActive(true);
+            howToPlayBlip.SetActive(false);
+
+            startButton.SetActive(true);
+            quitButton.SetActive(true);
+            optionsButton.SetActive(true);
+            howToPlayButton.SetActive(true);
+
+            howToPlayButton.GetComponent<Button>().Select();//sets the how to play button to select for non mouse users
+        }
+    }
+
+    public void OnClickOptions()
+    {
+        if (!optionsBlip.activeInHierarchy)
+        {
+            optionsBlip.SetActive(true);
+
+            startButton.SetActive(false);
+            quitButton.SetActive(false);
+            optionsButton.SetActive(false);
+            howToPlayButton.SetActive(false);
+
+            bgmSlider.Select();
+        }
+        else
+        {
+            optionsBlip.SetActive(false);
+
+            startButton.SetActive(true);
+            quitButton.SetActive(true);
+            optionsButton.SetActive(true);
+            howToPlayButton.SetActive(true);
+
+            optionsButton.GetComponent<Button>().Select();
         }
     }
 
