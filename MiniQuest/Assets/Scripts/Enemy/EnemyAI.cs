@@ -122,15 +122,16 @@ public class EnemyAI : MonoBehaviour
 
         direction = ((Vector2)path.vectorPath[currentWayPoint] - rb.position).normalized;//gets the direction to move the enemy
 
-        if(health > 0)//wont move if enemy is dead
-            rb.MovePosition(rb.position + direction * movementSpeed * (Time.fixedDeltaTime * Time.timeScale));// standard movement equation used on player aswell
-
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWayPoint]);//checks the distance to the next waypoint
 
         if(distance < nextWaypointDist)//changes waypoint if enemy is at the current waypoint
         {
             currentWayPoint++;
         }
+
+        if(health > 0)//wont move if enemy is dead
+            rb.MovePosition(rb.position + direction * movementSpeed * (Time.fixedDeltaTime * Time.timeScale));// standard movement equation used on player aswell
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
