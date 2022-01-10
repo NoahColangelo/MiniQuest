@@ -279,7 +279,6 @@ public class PlayerControls : MonoBehaviour
     {
         releaseProjectile = temp;
     }
-
     public bool GetReadSign()
     {
         return readSign;
